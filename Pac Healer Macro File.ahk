@@ -6,7 +6,7 @@ SetTitleMatchMode, 2        		; Match parts of the window title.
 #IfWinActive Dark Age of Camelot	; Only let this affect DAoC
 #SingleInstance Force			; Skips the dialog box for relaunching the script after an edit
 
-; This script is build for a Midgard Healer Spec, Specializations 40 Pacification, 36 Mending
+; This script is build for a Midgard Healer, Specializations 40 Pacification, 36 Mending
 
 
 F13::			; Press Mouse Button 1 for AoE Amnesia
