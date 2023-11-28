@@ -27,7 +27,7 @@ return
 
 F14::				; Press Mouse Button 2 for DoT and Spirit Shell
 	Send, {f2}		; Fungal Blight (DoT)
-	Send, {Down}		; Regenerative Trance (Insta HoT)
+	Send, {Down}	; Regenerative Trance (Insta HoT)
 	Send, {o}		; Spirit Shell
 return
 
@@ -40,7 +40,7 @@ return
 
 F16::				; Press Mouse Button 4 for AoE Root and Greater Heal
 	Send, {f4}		; Weed Field (AoE Root)
-	Send, {Down}		; Regenerative Trance (Insta HoT)
+	Send, {Down}	; Regenerative Trance (Insta HoT)
 	Send, {[}		; Greater Reparation (Greater Heal)
 return
 
@@ -60,7 +60,7 @@ return
 
 F19::				; Press Mouse Button 7 for AoE Disease and HoT
 	Send, {f7}		; Plague Spores (AoE Disease)
-	Send, {Down}		; Regenerative Trance (Insta HoT)
+	Send, {Down}	; Regenerative Trance (Insta HoT)
 	Send, {l}		; Frigg's Elixir (HoT)
 return
 
@@ -148,7 +148,7 @@ return
 
 
 ^F22::				; Press Ctrl + Mouse Button 10 for 2h Weapon & CL Style
-	Send, ^{f10}		; 2h Weapon
+	Send, ^{f10}	; 2h Weapon
 	Send, ^{m}		; Resilience
 return
 

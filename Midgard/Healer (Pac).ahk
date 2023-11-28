@@ -22,7 +22,6 @@ F13::				; Press Mouse Button 1 for AoE Amnesia
 	Send, {Left}	; Groundset 2300
 	Send, {Down}	; Equip 1h Weapon Slot
 	Send, {f1}		; Wake Oblivious (AoE Amnesia)
-	Send, {i} 		; Unbound
 return
 
 
@@ -64,7 +63,6 @@ F18::				; Press Mouse Button 6 for Cure Mez
 	Send, {Up}		; Groundset 1500
 	Send, {Down}	; Equip 1h Weapon Slot
 	Send, {k}		; Cleanse Mind (Cure Mez)
-	Send, {f6}		; Unset
 return
 
 
@@ -105,17 +103,17 @@ return
 
 ^F13::				; Press Ctrl + Mouse Button 1 for Minions of Zo & Rez
 	Send, ^{f1}		; Minions of Zo (Bracer of Zo'Arkat)
-	Sleep, 10
+		Sleep, 10
 	Send, ^{i}		; Welcome from Valhalla
 return
 
 ^F14::				; Press Ctrl + Mouse Button 2 for Shield Charge & PR
 	Send, ^{f2}		; Demonic Wrath (Basalt Buckler of Oblivion)
-	Sleep, 10
+		Sleep, 10
 	Send, ^{o}		; Perfect Recovery (PR)
 return
 
-^F15::				; Ctrl + Mouse Button 3 is Unset
+^F15::				; Press Ctrl + Mouse Button 3 for CL Snare Nuke
 	Send, ^{f3}		; Soul Entrapment (CL Snare Nuke)
 return
 
@@ -127,7 +125,7 @@ return
 	Send, ^{f5}		; Pacifying Glance (Insta Mez)
 return
 
-^F18::				; Ctrl + Mouse Button 6 is Unset
+^F18::				; Press Ctrl + Mouse Button 6 for CL DD
 	Send, ^{f6}		; Spirit Burst (Spirit CL DD)
 return
 
@@ -137,12 +135,6 @@ return
 
 ^F20::				; Press Ctrl + Mouse Button 8 for Insta Stun
 	Send, ^{f8}		; Paralyzing Glance (Insta Stun)
-return
-
-^F21::				; Ctrl + Mouse Button 9 is Unset
-return
-
-^F22::				; Ctrl + Mouse Button 10 is Unset
 return
 
 
