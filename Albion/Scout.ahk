@@ -6,8 +6,8 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 #IfWinActive Dark Age of Camelot		; Only let this affect DAoC
 
 
-; Pac Healer Spec information:  44 Pac, 31 Mend, 4 Aug
-; Master Level:  	Sojourner
+; Scout Spec information:  	50 Archery, 42 Shield, 37 Stealth, 18 Thrust
+; Master Level:  			Sojourner
 ; CL Abilities:  	
 ; Realm Abilities: 	
 
