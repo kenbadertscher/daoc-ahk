@@ -5,9 +5,6 @@ SendMode Event            				; To make this work with DAoC. ("Input" does not s
 SetTitleMatchMode, 2        			; Match parts of the window title.
 #IfWinActive Dark Age of Camelot		; Only let this affect DAoC
 
-#include %A_ScriptDir%\..\Group_Target.ahk		; Include Group Target.ahk from the directory above
-#include %A_ScriptDir%\..\Set_QBinds.ahk		; Include Set Qbinds.ahk from the directory above
-
 
 ; Shaman Spec information:  41 Aug, 26 Mend, 23 Cave
 ; Master Level:  	Perfecter
@@ -163,3 +160,7 @@ return
 ^F24::				; Press Ctrl + Mouse Button 12 for Acuity Shear
 	Send, ^{=}		; Acuity Shear
 return
+
+
+#include %A_ScriptDir%\..\GroupTarget.ahk		; Include GroupTarget.ahk from the directory above
+#include %A_ScriptDir%\..\SetQBinds.ahk			; Include SetQbinds.ahk from the directory above
