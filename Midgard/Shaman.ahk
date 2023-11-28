@@ -1,9 +1,9 @@
-﻿#NoEnv							; For performance and compatibility with future AutoHotkey releases.
+﻿#NoEnv									; For performance and compatibility with future AutoHotkey releases.
 #SingleInstance Force					; Skips the dialog box for relaunching the script after an edit
 #Warn                 					; Enable warnings to assist with detecting common errors.
 SendMode Event            				; To make this work with DAoC. ("Input" does not seem to work well.)
-SetTitleMatchMode, 2        				; Match parts of the window title.
-#IfWinActive Dark Age of Camelot			; Only let this affect DAoC
+SetTitleMatchMode, 2        			; Match parts of the window title.
+#IfWinActive Dark Age of Camelot		; Only let this affect DAoC
 
 #include %A_ScriptDir%\..\Group_Target.ahk		; Include Group Target.ahk from the directory above
 #include %A_ScriptDir%\..\Set_QBinds.ahk		; Include Set Qbinds.ahk from the directory above
@@ -11,17 +11,19 @@ SetTitleMatchMode, 2        				; Match parts of the window title.
 
 ; Shaman Spec information:  41 Aug, 26 Mend, 23 Cave
 ; Master Level:  	Perfecter
-; CL Abilities:  	Graceful Fall, Faded Quickness (11% Evade Buff), Soldier's Anticipation (11% Parry Buff)
-; Realm Abilities: 	RR5L5 Buys you Aug Dex to 386 (Usually Dex 5), Purge 3, VR 2, Ichor 1, MoC 1 - Then start putting points into AoM, Wild Healing, MoHealing, MoFocus
-; Dex Breakpoints:	374 for 3.0 AoE Disase, 386 for 2.3 Major Heal, 392 for 2.4 Group Heal, 398 for 2.5 AoE Root
+; CL Abilities:  	Resilience (Anytime Style), Focused Will (Mez Dampner), Focused Resolve (Root Dampner)
+; Realm Abilities: 	RR5L5 buys Aug Dex to 386 (Usually Dex 5), Purge 3, VR 2, Ichor 1, MoC 1 - Then start putting points into AoM, Wild Healing, MoHealing, MoFocus
+; Dex Breakpoints:	374 for 3.0 AoE Disease, 386 for 2.3 Major Heal, 392 for 2.4 Group Heal, 398 for 2.5 AoE Root
 
+
+SetKeyDelay, 18		; 18 milliseconds
 
 ^!r::Reload			; Reload the script using Ctrl+Alt+R
 
 
 F13::				; Press Mouse Button 1 for AoE DoT and Carapace
 	Send, {f1}		; Spore Explosion (AoE DoT)
-	Send, {Down}		; Regenerative Trance (Insta HoT)
+	Send, {Down}	; Regenerative Trance (Insta HoT)
 	Send, {i}		; Caustic Carapace
 return
 
