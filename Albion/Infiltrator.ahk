@@ -60,7 +60,7 @@ return
 F18::			    ; Press Mouse Button 6 for Evade Stun
 	Send, {[}	    ; Hypnotic Darkness (Evade Style Followup)
 	Send, {p}	    ; Reflection (Evade Style)
-	    leep, 5
+	    Sleep, 5
 	Send, {[}	    ; Hypnotic Darkness (Evade Style Followup)
 	Send, {f4}	    ; Amethyst Slash
 return
@@ -82,7 +82,7 @@ return
 F20::			    ; Press Mouse Button 8 for Buff Shear
 	Send, {k}	    ; Essence Shatter
 	Send, {j}	    ; Essence Dampen
-	Sleep, 5
+	    Sleep, 5
 	Send, {k}	    ; Essense Shatter
 return
 
@@ -106,7 +106,7 @@ return
 
 
 F23::			    ; Press Mouse Button 11 to Assist
-Send, {-}		    ; Assist
+    Send, {-}		    ; Assist
 return
 
 
