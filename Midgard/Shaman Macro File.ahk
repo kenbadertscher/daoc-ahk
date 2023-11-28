@@ -1,4 +1,4 @@
-﻿#NoEnv            					; For performance and compatibility with future AutoHotkey releases.
+﻿#NoEnv									; For performance and compatibility with future AutoHotkey releases.
 #SingleInstance Force					; Skips the dialog box for relaunching the script after an edit
 #Warn                 					; Enable warnings to assist with detecting common errors.
 SendMode Event            				; To make this work with DAoC. ("Input" does not seem to work well.)
