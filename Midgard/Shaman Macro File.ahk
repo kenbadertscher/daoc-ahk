@@ -1,201 +1,163 @@
-﻿#NoEnv            			; For performance and compatibility with future AutoHotkey releases.
-#Warn                 			; Enable warnings to assist with detecting common errors.
-SendMode Event            		; To make this work with DAoC. ("Input" does not seem to work well.)
-SetWorkingDir %A_ScriptDir%	    	; Ensures a consistent starting directory.
+﻿#NoEnv            					; For performance and compatibility with future AutoHotkey releases.
+#SingleInstance Force				; Skips the dialog box for relaunching the script after an edit
+#Warn                 				; Enable warnings to assist with detecting common errors.
+SendMode Event            			; To make this work with DAoC. ("Input" does not seem to work well.)
 SetTitleMatchMode, 2        		; Match parts of the window title.
 #IfWinActive Dark Age of Camelot	; Only let this affect DAoC
-#SingleInstance Force			; Skips the dialog box for relaunching the script after an edit
 
-; Reload the script using Ctrl+Alt+R
-^!r::Reload
+#include %A_ScriptDir%\..\Group_Target.ahk		; Include Group Target.ahk from the directory above
+#include %A_ScriptDir%\..\Set_QBinds.ahk		; Include Set Qbinds.ahk from the directory above
 
-; 	AoE DoT and Carapace
-F13::
-Send, {f1}				; Spore Explosion (AoE DoT)
-Send, {Down}				; Regenerative Trance (Insta HoT)
-Send, {i}				; Caustic Carapace
-return
 
-; 	DoT and Spirit Shell
-F14::
-Send, {f2}				; Fungal Blight (DoT)
-Send, {Down}				; Regenerative Trance (Insta HoT)
-Send, {o}				; Spirit Shell
-return
+; Shaman Spec information:  41 Aug, 26 Mend, 23 Cave
+; Master Level:  	Perfecter
+; CL Abilities:  	Graceful Fall, Faded Quickness (11% Evade Buff), Soldier's Anticipation (11% Parry Buff)
+; Realm Abilities: 	RR5L5 Buys you Aug Dex to 386 (Usually Dex 5), Purge 3, VR 2, Ichor 1, MoC 1 - Then start putting points into AoM, Wild Healing, MoHealing, MoFocus
+; Dex Breakpoints:	374 for 3.0 AoE Disase, 386 for 2.3 Major Heal, 392 for 2.4 Group Heal, 398 for 2.5 AoE Root
 
-; 	D/Q Shear and Cure NS
-F15::
-Send, {f3}				; Agility Trunc (D/Q Shear)
-Send, {p}				; Clarifying Cleanse (Cure Nearsight)
-return
 
-; 	AoE Root and Greater Heal
-F16::
-Send, {f4}				; Weed Field (AoE Root)
-Send, {Down}				; Regenerative Trance (Insta HoT)
-Send, {[}				; Greater Reparation (Greater Heal)
-return
+^!r::Reload							; Reload the script using Ctrl+Alt+R
 
-; 	Root and Cure Disease
-F17::
-Send, {f5}				; Rotting Clench (Root)
-Send, {j}				; Cure Disease
-return
 
-;	Bolt & DD
-F18::
-Send, {Up}				; Fungal Thorn (Bolt)
-Send, {f6}				; Ancestor's Ruin (DD)
-Send, {k}				; Escape Hold (Deroot)
-return
-
-;	AoE Disease and HoT
-F19::	
-Send, {f7}				; Plague Spores (AoE Disease)
-Send, {Down}				; Regenerative Trance (Insta HoT)
-Send, {l}				; Frigg's Elixir (HoT)
-return
-
-;	Disease and Acuity Buff
-F20::
-Send, {f8}				; Induce Disease
-Send, {;}				; Tribal Clarity (Acuity Buff)
-return
-
-;	S/C Shear and Earthen Power
-F21::
-Send, {f9}				; Potency Whack (Str Con Debuff)
-Send, {n}				; Earthen Power
-return
-
-;	PBAOE Disease & Supress Wounds
-F22::
-Send, {f10}				; Mold Blast (Insta PBAoE Disease)
-Send, {m}				; Supress Wounds (CL Ablative)
-return
-
-;	Assist
-F23::
-Send, {-}				; Assist
-Sleep, 10
-Send, {f8}				; Induce Disease
-return
-
-;	Target
-F24::
-Send, {=}				; Target
-return
-
-; 	Power Cost Debuff & Rez
-^F13::
-Send, ^{f1}				; Bane of Arcane (Power Cost Debuff)
-Send, ^{i}				; Remigration from Valhalla
-return
-
-; 	Magic Damage Debuff & Cure Rez Sick
-^F14::
-Send, ^{f2}				; Supress Magic (Magic Damage Debuff)
-Send, ^{o}				; Restore the Soul (Cure Rez Sick)
-return
-
-;	Dex Shear
-^F15::
-Send, ^{f3}				; Dexterity Fragment (Dex Shear) 
-Send, ^{p}				; (Unset)
-
-; 	Heal Buff & Ichor
-^F16::
-Send, ^{f4}				; Ichor of the Deep
-Send, ^{[}				; Divine Intervention (DI)
-return
-
-; 	Insta Root & Cure Root
-^F17::
-Send, ^{f5}				; Rotting Clench (Insta Root)
-Send, ^{j}				; Escape Hold (Cure Root)
-return
-
-;	Group Cure Disease
-^F18::
-Send, ^{f6}				; (Unset)
-Send, ^{k}				; Dispensation from Eir (Single Target Insta)
-return
-
-;	Endo Debuff
-^F19::
-Send, ^{f7}				; Waning Curse (Endo Debuff)
-return
-
-;	Melee Damage Debuff
-^F20::
-Send, ^{f8}				; Crumble Arms (Melee Damage Debuff)
-return
-
-;	Con Shear
-^F21::
-Send, ^{f9}				; Constitution Hash (Con Shear)
-return
-
-;	2h Weapon & CL Style
-^F22::
-Send, ^{f10}				; 2h Weapon
-Send, ^{m}				; Resilience
+F13::				; Press Mouse Button 1 for AoE DoT and Carapace
+	Send, {f1}		; Spore Explosion (AoE DoT)
+	Send, {Down}	; Regenerative Trance (Insta HoT)
+	Send, {i}		; Caustic Carapace
 return
 
 
-;	Strength Shear
-^F23::
-Send, ^{-}				; Strength Shear
-return
-
-;	Acuity Shear
-^F24::
-Send, ^{=}				; Acuity Shear
+F14::				; Press Mouse Button 2 for DoT and Spirit Shell
+	Send, {f2}		; Fungal Blight (DoT)
+	Send, {Down}	; Regenerative Trance (Insta HoT)
+	Send, {o}		; Spirit Shell
 return
 
 
-
-
-!F13::			;Target #5
-	Send, !{j}
+F15::				; Press Mouse Button 3 for D/Q Shear and Cure NS
+	Send, {f3}		; Agility Trunc (D/Q Shear)
+	Send, {p}		; Clarifying Cleanse (Cure Nearsight)
 return
 
-!F14::			;Target #1
-	Send !{i}
+
+F16::				; Press Mouse Button 4 for AoE Root and Greater Heal
+	Send, {f4}		; Weed Field (AoE Root)
+	Send, {Down}	; Regenerative Trance (Insta HoT)
+	Send, {[}		; Greater Reparation (Greater Heal)
 return
 
-!F15::			; Unset
+
+F17::				; Press Mouse Button 5 for Root and Cure Disease
+	Send, {f5}		; Rotting Clench (Root)
+	Send, {j}		; Cure Disease
 return
 
-!F16::			;Target #6
-	Send !{k}
+
+F18::				; Press Mouse Button 6 for Bolt & DD
+	Send, {Up}		; Fungal Thorn (Bolt)
+	Send, {f6}		; Ancestor's Ruin (DD)
+	Send, {k}		; Escape Hold (Deroot)
 return
 
-!F17::			;Target #2
-	Send !{o}
+
+F19::				; Press Mouse Button 7 for AoE Disease and HoT
+	Send, {f7}		; Plague Spores (AoE Disease)
+	Send, {Down}	; Regenerative Trance (Insta HoT)
+	Send, {l}		; Frigg's Elixir (HoT)
 return
 
-!F18::			; Unset
+
+F20::				; Press Mouse Button 8 for Disease and Acuity Buff
+	Send, {f8}		; Induce Disease
+	Send, {;}		; Tribal Clarity (Acuity Buff)
 return
 
-!F19::			;Target #7
-	Send !{l}
+
+F21::				; Press Mouse Button 9 for S/C Shear and Earthen Power
+	Send, {f9}		; Potency Whack (Str Con Debuff)
+	Send, {n}		; Earthen Power
 return
 
-!F20::			;Target #3
-	Send !{p}
+
+F22::				; Press Mouse Button 10 for PBAOE Disease & Supress Wounds
+	Send, {f10}		; Mold Blast (Insta PBAoE Disease)
+	Send, {m}		; Supress Wounds (CL Ablative)
 return
 
-!F21::			; Unset
+
+F23::				; Press Mouse Button 11 for Assist
+	Send, {-}		; Assist
+	Sleep, 10
+	Send, {f8}		; Induce Disease
 return
 
-!F22::			;Target #8
-	Send !{;}
+
+F24::				; Press Mouse Button 12 Target
+	Send, {=}		; Target
 return
 
-!F23::			;Target #4
-	Send !{[}
+
+^F13::				; Press Ctrl + Mouse Button 1 for Power Cost Debuff & Rez
+	Send, ^{f1}		; Bane of Arcane (Power Cost Debuff)
+	Send, ^{i}		; Remigration from Valhalla
 return
 
-!F24::			; Unset
+
+^F14::				; Press Ctrl + Mouse Button 2 for Magic Damage Debuff & Cure Rez Sick
+	Send, ^{f2}		; Supress Magic (Magic Damage Debuff)
+	Send, ^{o}		; Restore the Soul (Cure Rez Sick)
+return
+
+
+^F15::				; Press Ctrl + Mouse Button 3 for Dex Shear
+	Send, ^{f3}		; Dexterity Fragment (Dex Shear) 
+	Send, ^{p}		; (Unset)
+return
+
+
+^F16::				; Press Ctrl + Mouse Button 4 for Heal Buff & Ichor
+	Send, ^{f4}		; Ichor of the Deep
+	Send, ^{[}		; Divine Intervention (DI)
+return
+
+
+^F17::				; Press Ctrl + Mouse Button 5 for Insta Root & Cure Root
+	Send, ^{f5}		; Rotting Clench (Insta Root)
+	Send, ^{j}		; Escape Hold (Cure Root)
+return
+
+
+^F18::				; Press Ctrl + Mouse Button 6 for Group Cure Disease
+	Send, ^{f6}		; (Unset)
+	Send, ^{k}		; Dispensation from Eir (Single Target Insta)
+return
+
+
+^F19::				; Press Ctrl + Mouse Button 7 for Endo Debuff
+	Send, ^{f7}		; Waning Curse (Endo Debuff)
+return
+
+
+^F20::				; Press Ctrl + Mouse Button 8 for Melee Damage Debuff
+	Send, ^{f8}		; Crumble Arms (Melee Damage Debuff)
+return
+
+
+^F21::				; Press Ctrl + Mouse Button 9 for Con Shear
+	Send, ^{f9}		; Constitution Hash (Con Shear)
+return
+
+
+^F22::				; Press Ctrl + Mouse Button 10 for 2h Weapon & CL Style
+	Send, ^{f10}	; 2h Weapon
+	Send, ^{m}		; Resilience
+return
+
+
+^F23::				; Press Ctrl + Mouse Button 11 for Strength Shear
+	Send, ^{-}		; Strength Shear
+return
+
+
+^F24::				; Press Ctrl + Mouse Button 12 for Acuity Shear
+	Send, ^{=}		; Acuity Shear
 return
