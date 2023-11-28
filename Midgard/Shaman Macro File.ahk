@@ -16,7 +16,11 @@ SetTitleMatchMode, 2        		; Match parts of the window title.
 ; Dex Breakpoints:	374 for 3.0 AoE Disase, 386 for 2.3 Major Heal, 392 for 2.4 Group Heal, 398 for 2.5 AoE Root
 
 
+<<<<<<< HEAD
 ^!r::Reload			; Reload the script using Ctrl+Alt+R
+=======
+^!r::Reload							; Reload the script using Ctrl+Alt+R
+>>>>>>> f751b52ce153a2869ecb854806fb25dab6eae270
 
 
 F13::				; Press Mouse Button 1 for AoE DoT and Carapace
