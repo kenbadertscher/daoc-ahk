@@ -1,9 +1,9 @@
 ﻿#NoEnv            					; For performance and compatibility with future AutoHotkey releases.
-#SingleInstance Force				; Skips the dialog box for relaunching the script after an edit
-#Warn                 				; Enable warnings to assist with detecting common errors.
-SendMode Event            			; To make this work with DAoC. ("Input" does not seem to work well.)
-SetTitleMatchMode, 2        		; Match parts of the window title.
-#IfWinActive Dark Age of Camelot	; Only let this affect DAoC
+#SingleInstance Force					; Skips the dialog box for relaunching the script after an edit
+#Warn                 					; Enable warnings to assist with detecting common errors.
+SendMode Event            				; To make this work with DAoC. ("Input" does not seem to work well.)
+SetTitleMatchMode, 2        				; Match parts of the window title.
+#IfWinActive Dark Age of Camelot			; Only let this affect DAoC
 
 #include %A_ScriptDir%\..\Group_Target.ahk		; Include Group Target.ahk from the directory above
 #include %A_ScriptDir%\..\Set_QBinds.ahk		; Include Set Qbinds.ahk from the directory above
