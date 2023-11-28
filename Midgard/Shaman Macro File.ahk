@@ -148,7 +148,7 @@ return
 
 
 ^F22::				; Press Ctrl + Mouse Button 10 for 2h Weapon & CL Style
-	Send, ^{f10}	; 2h Weapon
+	Send, ^{f10}		; 2h Weapon
 	Send, ^{m}		; Resilience
 return
 
