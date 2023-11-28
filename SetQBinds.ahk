@@ -1,7 +1,7 @@
 ﻿; This script is intended to work with #Include, and will automatically set all of my stanardized DAoC quickbinds.
 
 
-^+!F1::  	; Press Ctrl, Shift, Alt, and F1 to Set all Qbinds
+^+!F1::  	; Press Ctrl, Shift, Alt, and F1 to Set all Qbinds 
 
     SetKeyDelay, 40
 

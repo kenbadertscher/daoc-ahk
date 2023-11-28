@@ -102,48 +102,46 @@ F24::				; Press Mouse Button 12 to Purge
 return
 
 
-^F13::			; Press Ctrl + Mouse Button 1 for Minions of Zo & Rez
+^F13::				; Press Ctrl + Mouse Button 1 for Minions of Zo & Rez
 	Send, ^{f1}		; Minions of Zo (Bracer of Zo'Arkat)
 	Sleep, 10
 	Send, ^{i}		; Welcome from Valhalla
 return
 
-^F14::			; Press Ctrl + Mouse Button 2 for Shield Charge & PR
+^F14::				; Press Ctrl + Mouse Button 2 for Shield Charge & PR
 	Send, ^{f2}		; Demonic Wrath (Basalt Buckler of Oblivion)
 	Sleep, 10
 	Send, ^{o}		; Perfect Recovery (PR)
 return
 
-^F15::			; Ctrl + Mouse Button 3 is Unset
+^F15::				; Ctrl + Mouse Button 3 is Unset
 	Send, ^{f3}		; Soul Entrapment (CL Snare Nuke)
 return
 
-^F16::			; Press Ctrl + Mouse Button 4 for Insta AoE Mez
+^F16::				; Press Ctrl + Mouse Button 4 for Insta AoE Mez
 	Send, ^{f4}		; Pacifying Glare (Insta AoE Mez)
 return
 
-^F17::			; Press Ctrl + Mouse Buton 5 for Insta Mez
+^F17::				; Press Ctrl + Mouse Buton 5 for Insta Mez
 	Send, ^{f5}		; Pacifying Glance (Insta Mez)
 return
 
-^F18::			; Ctrl + Mouse Button 6 is Unset
+^F18::				; Ctrl + Mouse Button 6 is Unset
 	Send, ^{f6}		; Spirit Burst (Spirit CL DD)
 return
 
-^F19::			; Press Ctrl + Mouse Button 7 for Insta AoE Stun
+^F19::				; Press Ctrl + Mouse Button 7 for Insta AoE Stun
 	Send, ^{f7}		; Paralyzing Glare (Insta AoE Stun)
 return
 
-^F20::			; Press Ctrl + Mouse Button 8 for Insta Stun
+^F20::				; Press Ctrl + Mouse Button 8 for Insta Stun
 	Send, ^{f8}		; Paralyzing Glance (Insta Stun)
 return
 
-^F21::			; Ctrl + Mouse Button 9 is Unset
-
+^F21::				; Ctrl + Mouse Button 9 is Unset
 return
 
-^F22::			; Ctrl + Mouse Button 10 is Unset
-
+^F22::				; Ctrl + Mouse Button 10 is Unset
 return
 
 
