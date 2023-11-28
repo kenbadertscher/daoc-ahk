@@ -13,7 +13,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 ; Dex Breakpoints:	386 or 392 for 2.0 Debuff, 398 or 415 for 2.5 Stun, 374 for 2.6 Energy Nuke
 
 
-SetKeyDelay, 18		; 18 milliseconds
+SetKeyDelay, 18		; 18 milliseconds between keypresses
 
 ^!r::Reload			; Reload the script using Ctrl+Alt+R
 
@@ -81,6 +81,7 @@ return
 F24::			    ; Press Mouse Button 12 for Purge
 	Send, {=}
 return
+
 
 
 ^F18::			    ; Press Ctrl + Mouse Button 6 for AoE Disease

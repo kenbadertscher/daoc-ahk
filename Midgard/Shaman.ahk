@@ -13,7 +13,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 ; Dex Breakpoints:	374 for 3.0 AoE Disease, 386 for 2.3 Major Heal, 392 for 2.4 Group Heal, 398 for 2.5 AoE Root
 
 
-SetKeyDelay, 18		; 18 milliseconds
+SetKeyDelay, 18		; 18 milliseconds between keypresses
 
 ^!r::Reload			; Reload the script using Ctrl+Alt+R
 
@@ -93,6 +93,7 @@ return
 F24::				; Press Mouse Button 12 Target
 	Send, {=}		; Target
 return
+
 
 
 ^F13::				; Press Ctrl + Mouse Button 1 for Power Cost Debuff & Rez

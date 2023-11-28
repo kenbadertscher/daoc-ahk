@@ -12,7 +12,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 ; Realm Abilities: 	
 
 
-SetKeyDelay, 18		; 18 milliseconds
+SetKeyDelay, 18		; 18 milliseconds between keypresses
 
 ^!r::Reload			; Reload the script using Ctrl+Alt+R
 
@@ -87,7 +87,7 @@ return
 
 F22::				; Press Mouse Button 10 for Dismount and Stealth
 	Send, {u}		; Mount
-	Sleep, 5
+		Sleep, 5
 	Send, {.}		; Stealth
 return
 
@@ -95,7 +95,6 @@ return
 F23::				; Press Mouse Button 11 for Assist
 	Send, {-}		; Assist
 return
-
 
 
 F24::				; Press Mouse Button 12 for Purge

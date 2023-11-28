@@ -13,7 +13,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 ; Dex Breakpoints:	374 for 2.2 Greater Heal, 374 for 3.0 AoE Mez
 
 
-SetKeyDelay, 18		; 18 milliseconds
+SetKeyDelay, 18		; 18 milliseconds between keypresses
 
 ^!r::Reload			; Reload the script using Ctrl+Alt+R
 
@@ -100,6 +100,7 @@ return
 F24::				; Press Mouse Button 12 to Purge
 	Send, {=}		; Purge
 return
+
 
 
 ^F13::				; Press Ctrl + Mouse Button 1 for Minions of Zo & Rez
