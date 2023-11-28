@@ -21,14 +21,14 @@ SetTitleMatchMode, 2        		; Match parts of the window title.
 
 F13::				; Press Mouse Button 1 for AoE DoT and Carapace
 	Send, {f1}		; Spore Explosion (AoE DoT)
-	Send, {Down}	; Regenerative Trance (Insta HoT)
+	Send, {Down}		; Regenerative Trance (Insta HoT)
 	Send, {i}		; Caustic Carapace
 return
 
 
 F14::				; Press Mouse Button 2 for DoT and Spirit Shell
 	Send, {f2}		; Fungal Blight (DoT)
-	Send, {Down}	; Regenerative Trance (Insta HoT)
+	Send, {Down}		; Regenerative Trance (Insta HoT)
 	Send, {o}		; Spirit Shell
 return
 
@@ -41,7 +41,7 @@ return
 
 F16::				; Press Mouse Button 4 for AoE Root and Greater Heal
 	Send, {f4}		; Weed Field (AoE Root)
-	Send, {Down}	; Regenerative Trance (Insta HoT)
+	Send, {Down}		; Regenerative Trance (Insta HoT)
 	Send, {[}		; Greater Reparation (Greater Heal)
 return
 
@@ -61,7 +61,7 @@ return
 
 F19::				; Press Mouse Button 7 for AoE Disease and HoT
 	Send, {f7}		; Plague Spores (AoE Disease)
-	Send, {Down}	; Regenerative Trance (Insta HoT)
+	Send, {Down}		; Regenerative Trance (Insta HoT)
 	Send, {l}		; Frigg's Elixir (HoT)
 return
 
