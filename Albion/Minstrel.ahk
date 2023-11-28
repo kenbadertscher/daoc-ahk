@@ -91,19 +91,19 @@ return
 
 
 ^F13::				; Press Ctrl + Mouse Button 1 for Pet Passive
-	Send, ^{f1}		; Pet Passive
-	Send, ^{f2}		; Pet Follow
+	Send, ^{o}		; Pet Passive
+	Send, ^{p}		; Pet Follow
 return
 
 
 ^F14::				; Press Ctrl + Mouse Button 2 for Pet Attack
-	Send, ^{f3}		; Pet Attack
+	Send, ^{i}		; Pet Attack
 return
 
 
 ^F15::				; Press Ctrl + Mouse Button 3 for Pet Go Target
-	Send, ^{f1}		; Pet Passive
-	Send, ^{f4}		; Go Target
+	Send, ^{o}		; Pet Passive
+	Send, ^{[}		; Go Target
 return
 
 
@@ -123,7 +123,7 @@ return
 
 
 ^F19::				; Press Ctrl + Mouse Button 7 for Buckler Snare
-	Send, ^{f7}			; Demonic Wrath (Buckler Snare)
+	Send, ^{f7}		; Demonic Wrath (Buckler Snare)
 return
 
 
