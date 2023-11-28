@@ -9,7 +9,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 ; Pac Healer Spec information:  47 Void, 19 Light, 18 Mana
 ; Master Level:  	Convoker
 ; CL Abilities:  	Resilience (Anytime Style), Focused Will (Mez Dampner), Focused Resolve (Root Dampner)
-; Realm Abilities: 	RR6L0 buys Aug Dex to 374 (Usually Dex 5), Purge 3, PR 2, DI 2, MoC 1 - Then start putting points into AoM, Wild Healing, MoHealing, MoFocus
+; Realm Abilities: 	
 ; Dex Breakpoints:	386 or 392 for 2.0 Debuff, 398 or 415 for 2.5 Stun, 374 for 2.6 Energy Nuke
 
 
