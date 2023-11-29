@@ -32,8 +32,8 @@ return
 
 
 F15::				; Press Mouse Button 3 for Damage Buffs
-Send, {k}			; Savage Blows
-Send, {l}			; Zeal of Kelgor
+	Send, {k}		; Savage Blows
+	Send, {l}		; Zeal of Kelgor
 return
 
 
