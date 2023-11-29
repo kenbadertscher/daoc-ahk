@@ -232,96 +232,123 @@
 return
 
 
+^+!F11::  	; Press Ctrl, Shift, Alt, and F11 to Unset all Qbinds 
 
-;	Unset all qbinds
-^+!F11::
-Send, /qunbind 10 1 3{enter}
-Sleep, 60
-Send, /qunbind 10 2 3{enter}
-Sleep, 60
-Send, /qunbind 10 3 3{enter}
-Sleep, 60
-Send, /qunbind 10 4 3{enter}
-Sleep, 60
-Send, /qunbind 10 5 3{enter}
-Sleep, 60
-Send, /qunbind 10 6 3{enter}
-Sleep, 60
-Send, /qunbind 10 7 3{enter}
-Sleep, 60
-Send, /qunbind 10 8 3{enter}
-Sleep, 60
-Send, /qunbind 10 9 3{enter}
-Sleep, 60
-Send, /qunbind 10 10 3{enter}
-Sleep, 60
-Send, /qunbind 9 1 3{enter}
-Sleep, 60
-Send, /qunbind 9 2 3{enter}
-Sleep, 60
-Send, /qunbind 9 3 3{enter}
-Sleep, 60
-Send, /qunbind 9 4 3{enter}
-Sleep, 60
-Send, /qunbind 9 5 3{enter}
-Sleep, 60
-Send, /qunbind 9 6 3{enter}
-Sleep, 60
-Send, /qunbind 9 7 3{enter}
-Sleep, 60
-Send, /qunbind 9 8 3{enter}
-Sleep, 60
-Send, /qunbind 9 9 3{enter}
-Sleep, 60
-Send, /qunbind 9 10 3{enter}
-Sleep, 60
-Send, /qunbind 8 1 3{enter}
-Sleep, 60
-Send, /qunbind 8 2 3{enter}
-Sleep, 60
-Send, /qunbind 8 3 3{enter}
-Sleep, 60
-Send, /qunbind 8 4 3{enter}
-Sleep, 60
-Send, /qunbind 8 5 3{enter}
-Sleep, 60
-Send, /qunbind 8 6 3{enter}
-Sleep, 60
-Send, /qunbind 8 7 3{enter}
-Sleep, 60
-Send, /qunbind 8 8 3{enter}
-Sleep, 60
-Send, /qunbind 8 9 3{enter}
-Sleep, 60
-Send, /qunbind 8 10 3{enter}
-Sleep, 60
-Send, /qunbind 7 1 3{enter}
-Sleep, 60
-Send, /qunbind 7 2 3{enter}
-Sleep, 60
-Send, /qunbind 7 3 3{enter}
-Sleep, 60
-Send, /qunbind 7 4 3{enter}
-Sleep, 60
-Send, /qunbind 7 5 3{enter}
-Sleep, 60
-Send, /qunbind 7 6 3{enter}
-Sleep, 60
-Send, /qunbind 7 7 3{enter}
-Sleep, 60
-Send, /qunbind 7 8 3{enter}
-Sleep, 60
-Send, /qunbind 7 9 3{enter}
-Sleep, 60
-Send, /qunbind 7 10 3{enter}
-Sleep, 60
-Send, /qunbind 7 1 1{enter}
-Sleep, 60
-Send, /qunbind 7 2 1{enter}
-Sleep, 60
-Send, /qunbind 7 3 1{enter}
-Sleep, 60
-Send, /qunbind 7 4 1{enter}
-Sleep, 60
-Send, /qunbind 7 10 1{enter}
+	SetKeyDelay, 40
+
+		Send, /qunbind 10 1 3{enter}
+			Sleep, 60
+		Send, /qunbind 10 2 3{enter}
+			Sleep, 60
+		Send, /qunbind 10 3 3{enter}
+			Sleep, 60
+		Send, /qunbind 10 4 3{enter}
+			Sleep, 60
+		Send, /qunbind 10 5 3{enter}
+			Sleep, 60
+		Send, /qunbind 10 6 3{enter}
+			Sleep, 60
+		Send, /qunbind 10 7 3{enter}
+			Sleep, 60
+		Send, /qunbind 10 8 3{enter}
+			Sleep, 60
+		Send, /qunbind 10 9 3{enter}
+			Sleep, 60
+		Send, /qunbind 10 10 3{enter}
+			Sleep, 60
+
+		Send, /qunbind 9 1 3{enter}
+			Sleep, 60
+		Send, /qunbind 9 2 3{enter}
+			Sleep, 60
+		Send, /qunbind 9 3 3{enter}
+			Sleep, 60
+		Send, /qunbind 9 4 3{enter}
+			Sleep, 60
+		Send, /qunbind 9 5 3{enter}
+			Sleep, 60
+		Send, /qunbind 9 6 3{enter}
+			Sleep, 60
+		Send, /qunbind 9 7 3{enter}
+			Sleep, 60
+		Send, /qunbind 9 8 3{enter}
+			Sleep, 60
+		Send, /qunbind 9 9 3{enter}
+			Sleep, 60
+		Send, /qunbind 9 10 3{enter}
+			Sleep, 60
+
+		Send, /qunbind 8 1 3{enter}
+			Sleep, 60
+		Send, /qunbind 8 2 3{enter}
+			Sleep, 60
+		Send, /qunbind 8 3 3{enter}
+			Sleep, 60
+		Send, /qunbind 8 4 3{enter}
+			Sleep, 60
+		Send, /qunbind 8 5 3{enter}
+			Sleep, 60
+		Send, /qunbind 8 6 3{enter}
+			Sleep, 60
+		Send, /qunbind 8 7 3{enter}
+			Sleep, 60
+		Send, /qunbind 8 8 3{enter}
+			Sleep, 60
+		Send, /qunbind 8 9 3{enter}
+			Sleep, 60
+		Send, /qunbind 8 10 3{enter}
+			Sleep, 60
+
+		Send, /qunbind 7 1 3{enter}
+			Sleep, 60
+		Send, /qunbind 7 2 3{enter}
+			Sleep, 60
+		Send, /qunbind 7 3 3{enter}
+			Sleep, 60
+		Send, /qunbind 7 4 3{enter}
+			Sleep, 60
+		Send, /qunbind 7 5 3{enter}
+			Sleep, 60
+		Send, /qunbind 7 6 3{enter}
+			Sleep, 60
+		Send, /qunbind 7 7 3{enter}
+			Sleep, 60
+		Send, /qunbind 7 8 3{enter}
+			Sleep, 60
+		Send, /qunbind 7 9 3{enter}
+			Sleep, 60
+		Send, /qunbind 7 10 3{enter}
+			Sleep, 60
+
+		Send, /qunbind 6 1 3{enter}
+			Sleep, 60
+		Send, /qunbind 6 2 3{enter}
+			Sleep, 60
+		Send, /qunbind 6 3 3{enter}
+			Sleep, 60
+		Send, /qunbind 6 4 3{enter}
+			Sleep, 60
+		Send, /qunbind 6 5 3{enter}
+			Sleep, 60
+		Send, /qunbind 6 6 3{enter}
+			Sleep, 60
+		Send, /qunbind 6 7 3{enter}
+			Sleep, 60
+		Send, /qunbind 6 8 3{enter}
+			Sleep, 60
+		Send, /qunbind 6 9 3{enter}
+			Sleep, 60
+		Send, /qunbind 6 10 3{enter}
+			Sleep, 60
+
+		Send, /qunbind 7 1 1{enter}
+			Sleep, 60
+		Send, /qunbind 7 2 1{enter}
+			Sleep, 60
+		Send, /qunbind 7 3 1{enter}
+			Sleep, 60
+		Send, /qunbind 7 4 1{enter}
+
+    SetKeyDelay, 18
+
 return
