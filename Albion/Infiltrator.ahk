@@ -8,8 +8,8 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 
 ; Pac Healer Spec information:  49 Envenom, 44 Dual Wield, 40 Stealth, 39 Critical Strike, 32 Slash
 ; Master Level:                 Battlemaster
-; CL Abilities:  	            
-; Realm Abilities: 	            
+; CL Abilities:  	            Damage Ward, Soldier's Anticipation, Surge of Chaos
+; Realm Abilities: 	            Purge 3, Vanish 3, Mastery of Pain 9, Long Wind 1, Avoidance of Magic 5, Rest in Mastery of Stealth
 
 
 SetKeyDelay, 18		; 18 milliseconds between keypresses
@@ -27,8 +27,8 @@ F14::			    ; Press Mouse Button 2 for Creeping Death
 	Send, {right}	; Disease Poison
 	Send, {f3}	    ; Rib Separation
 	Send, {f2}	    ; Creeping Death
-	    Sleep, 5
-	Send, {f3}	    ; Creeping Death
+	    Sleep, 15
+	Send, {f3}	    ; Rib Separation
 return
 
 
@@ -42,7 +42,7 @@ return
 F16::			    ; Press Mouse Button 4 for Pincer / Leaper
 	Send, {f6}	    ; Leaper
 	Send, {f5}	    ; Pincer
-	    Sleep, 5
+	    Sleep, 15
 	Send, {f6}	    ; Leaper
 	Send, {f4}	    ; Amethyst Slash
 return
@@ -51,7 +51,7 @@ return
 F17::			    ; Press Mouse Button 5 for Side Snare
 	Send, {o}	    ; Shadow's Rain (Flank Followup)
 	Send, {i}	    ; Flank (Side Snare)
-	    Sleep, 5
+	    Sleep, 15
 	Send, {o}	    ; Shadow's Rain (Flank Followup)
 	Send, {f4}	    ; Amethyst Slash
 return
@@ -60,7 +60,7 @@ return
 F18::			    ; Press Mouse Button 6 for Evade Stun
 	Send, {[}	    ; Hypnotic Darkness (Evade Style Followup)
 	Send, {p}	    ; Reflection (Evade Style)
-	    Sleep, 5
+	    Sleep, 15
 	Send, {[}	    ; Hypnotic Darkness (Evade Style Followup)
 	Send, {f4}	    ; Amethyst Slash
 return
@@ -74,7 +74,7 @@ F19::			    ; Press Mouse Button 7 for Essence Flames
 	Send, {down}	; Touch of Death (Con Debuff Poison)
 	Send, {;}	    ; Essence Sear
 	Send, {l}	    ; Essence Flames
-	    Sleep, 5
+	    Sleep, 15
 	Send, {;}	    ; Essense Sear
 return
 
@@ -82,7 +82,7 @@ return
 F20::			    ; Press Mouse Button 8 for Buff Shear
 	Send, {k}	    ; Essence Shatter
 	Send, {j}	    ; Essence Dampen
-	    Sleep, 5
+	    Sleep, 15
 	Send, {k}	    ; Essense Shatter
 return
 
@@ -92,7 +92,7 @@ F21::			    ; Press Mouse Button 9 for Evade Chain (Abs Debuff)
 	Send, {up}  	; Swordbreaker (Wp Skill Debuff Poison)
 	Send, {f8}	    ; Achilles' Heel (Evade Style Followup)
 	Send, {f7}	    ; Hamstring (Evade Style)
-	    Sleep, 5
+	    Sleep, 15
 	Send, {f8}	    ; Acheilles' Heel (Evade Style Followup)
 	Send, {f4}	    ; Amethyst Slash
 return
@@ -100,13 +100,13 @@ return
 
 F22::			    ; Press Mouse Button 10 to Dismount and Stealth
 	Send, {u}	    ; Mount
-	    Sleep, 5
+	    Sleep, 15
 	Send, {.}	    ; Stealth
 return
 
 
 F23::			    ; Press Mouse Button 11 to Assist
-    Send, {-}		    ; Assist
+    Send, {-}		; Assist
 return
 
 
