@@ -34,11 +34,13 @@ return
 
 
 F16::				; Press Mouse Button 4 for AoE Mez
+	Send, {Down}	; Groundset 1875
 	Send, {f4}		; Shroud of Selinity (AoE Mez)
 return
 
 
 F17::				; Press Mouse Button 5 for Mez
+	Send, {Right}	; Groundset 1500
 	Send, {f5}		; Superior Fascination (Mez)
 return
 
@@ -51,6 +53,7 @@ return
 
 
 F19::				; Press Mouse Button 7 for AoE Root
+	Send, {Left}	; Groundset 1655
 	Send, {f7}		; Body Lock (AoE Root)
 return
 
