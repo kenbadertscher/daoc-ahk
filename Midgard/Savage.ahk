@@ -95,7 +95,7 @@ return
 
 
 F24::				; Presss Mouse Button 12 for Evade and Parry Buffs
-	end, {n}		; Fangs of Kelgor
+	Send, {n}		; Fangs of Kelgor
 	Send, {m}		; Evasion of Kelgor
 return
 
