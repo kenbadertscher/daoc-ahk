@@ -48,16 +48,16 @@ return
 
 
 F17::				; Press Mouse Button 5 for Side Snare
-	Send, {Left}	; Snare Poison
 	Send, {f7}		; Rush
 	Send, {f6}		; Polar Rift
 return
 
 
 F18::				; Press Mouse Button 6 for Evade Stun
-	Send, {;}		; Achilles' Heel
-	Send, {l}		; Hamstring
-	Send, {;}		; Achilles' Heel
+	Send, {n}		; Equip 1-hand Weapon
+	Send, {;}		; Frosty Gaze
+	Send, {l}		; Comeback (Evade Style, AF Debuff)
+	Send, {;}		; Frosty Gaze
 	Send, {o}		; Aurora
 	Send, {i}		; Northern Lights
 return
