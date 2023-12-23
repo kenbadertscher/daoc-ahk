@@ -24,7 +24,6 @@ return
 
 
 F14::				; Press Mouse Button 2 for CD Chain
-	Send, {n}		; 1-Handed Weapon
 	Send, {Right}	; Disease Poison
 	Send, {f3}		; Rib Separation
 	Send, {f2}		; Creeping Death
@@ -43,11 +42,12 @@ F16::				; Press Mouse Button 4 for Pincer Leaper
 	Send, {f5}		; Leaper
 	Send, {f4}		; Pincer
 	Send, {f5}		; Leaper
-	Send, {f6}		; Polar Rift
+	Send, {f6}		; Havoc (Axe Anytime)
 return
 
 
 F17::				; Press Mouse Button 5 for Side Snare
+	Send, {n}		; Equip 1-hand Weapon
 	Send, {f7}		; Rush
 	Send, {f6}		; Polar Rift
 return
@@ -55,9 +55,9 @@ return
 
 F18::				; Press Mouse Button 6 for Evade Stun
 	Send, {n}		; Equip 1-hand Weapon
-	Send, {;}		; Frosty Gaze
+	Send, {;}		; Frosty Gaze (Evade followup, 7 sec stun)
 	Send, {l}		; Comeback (Evade Style, AF Debuff)
-	Send, {;}		; Frosty Gaze
+	Send, {;}		; Frosty Gaze (Evade followup, 7 sec stun)
 	Send, {o}		; Aurora
 	Send, {i}		; Northern Lights
 return
@@ -82,8 +82,7 @@ F21::				; Press Mouse Button 9 for Evade Abs Debuff
 	Send, {F10}		; Achilles' Heel
 	Send, {F9}		; Hamstring
 	Send, {F10}		; Achilles' Heel
-	Send, {o}		; Aurora
-	Send, {i}		; Northern Lights
+	Send, {f6}		; Havoc (Axe Anytime)
 return
 
 
