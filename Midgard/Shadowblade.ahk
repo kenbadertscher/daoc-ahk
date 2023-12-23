@@ -46,10 +46,12 @@ F16::				; Press Mouse Button 4 for Pincer Leaper
 return
 
 
-F17::				; Press Mouse Button 5 for Side Snare
+F17::				; Press Mouse Button 5 for Side Stun
 	Send, {n}		; Equip 1-hand Weapon
-	Send, {f7}		; Rush
-	Send, {f6}		; Polar Rift
+	Send, {o}		; Aurora Borealis (Side Stun followup, 26% ASR)
+	Send, {i}		; Decaying Rage (Left Axe Side Stun, 5 sec stun)
+	Send, {o}		; Aurora Borealis (Side Stun followup, 26% ASR)
+	Send, {f7}		; Doublefrost (Left Axe Anytime)
 return
 
 
@@ -58,8 +60,7 @@ F18::				; Press Mouse Button 6 for Evade Stun
 	Send, {;}		; Frosty Gaze (Evade followup, 7 sec stun)
 	Send, {l}		; Comeback (Evade Style, AF Debuff)
 	Send, {;}		; Frosty Gaze (Evade followup, 7 sec stun)
-	Send, {o}		; Aurora
-	Send, {i}		; Northern Lights
+	Send, {f7}		; Doublefrost (Left Axe Anytime)
 return
 
 
