@@ -81,7 +81,7 @@ return
 
 F21::				; Press Mouse Button 9 for Evade Abs Debuff
 	Send, {F10}		; Achilles' Heel
-	Send, {F9}		; Hamstring
+	Send, {F9}		; Hamstring (Evade Style, ABS Debuff)
 	Send, {F10}		; Achilles' Heel
 	Send, {f6}		; Havoc (Axe Anytime)
 return
