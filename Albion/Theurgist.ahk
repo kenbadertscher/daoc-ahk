@@ -6,8 +6,8 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 #IfWinActive Dark Age of Camelot		; Only let this affect DAoC
 
 
-; Theurgist Spec information:		
-; Master Level:					Convoker
+; Theurgist Spec information:			45 Air, 26 Earth, 14 Cold
+; Master Level:							Convoker
 ; CL Abilities:					
 ; Realm Abilities:				
 
