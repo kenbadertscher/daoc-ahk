@@ -7,7 +7,6 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 
 
 ; Minstrel Spec information:		50 Instruments, 39 Slash, 21 Stealth
-; Master Level:						Sojourner
 ; CL Abilities:						
 ; Realm Abilities:				
 
