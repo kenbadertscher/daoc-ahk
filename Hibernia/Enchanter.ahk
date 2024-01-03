@@ -5,8 +5,8 @@ SendMode Event            				; To make this work with DAoC. ("Input" does not s
 SetTitleMatchMode, 2        			; Match parts of the window title.
 #IfWinActive Dark Age of Camelot		; Only let this affect DAoC
 
-; TODO: Clean up and rename class abilities - this is based on my Eldritch file
-; Add Pet commands to control clicks
+; TODO: Clean up and rename class abilities - this is based on my Eldritch file 
+; Add Pet commands to control clicks -- this.
 
 ; Enchanter Spec information:		
 ; Master Level:					
