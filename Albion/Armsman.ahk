@@ -8,7 +8,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 
 ; Armsman Spec information:		
 ; Master Level:					Battlemaster
-; CL Abilities:					
+; CL Abilities:					The best
 ; Realm Abilities:				
 
 
