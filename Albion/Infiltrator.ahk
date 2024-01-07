@@ -12,7 +12,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 ; Realm Abilities: 	            Purge 3, Vanish 3, Mastery of Pain 9, Long Wind 1, Avoidance of Magic 5, Rest in Mastery of Stealth
 
 
-SetKeyDelay, 20		; 20 milliseconds between keypresses
+SetKeyDelay, 21		; 21 milliseconds between keypresses
 
 ^!r::Reload			; Reload the script using Ctrl+Alt+R
 
