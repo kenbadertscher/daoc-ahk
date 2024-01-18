@@ -7,7 +7,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 
 
 ; Friar Spec information:		
-; Master Level:					Perfectionist
+; Master Level:					Perfectionistic
 ; CL Abilities:					
 ; Realm Abilities:				
 
