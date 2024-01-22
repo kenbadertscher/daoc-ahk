@@ -51,7 +51,7 @@ return
 
 
 F19::				; Press Mouse Button 7 to Side Stun w/ anytime backup
-	Send, {up}		; Ready Staff
+	Send, {up}		; Ready Staff 
 	Send, {f6}		; Double Strike (Side Stun)
 	Send, {f5}		; Quick Strike (Anytime)
 	Send, {f1}		; Sharpness (Evade Buff)
