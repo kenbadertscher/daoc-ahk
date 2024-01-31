@@ -6,7 +6,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 #IfWinActive Dark Age of Camelot		; Only let this affect DAoC
 
 
-; Sorceror Spec information:		
+; Sorceror Spec information:	50 Mind
 ; Master Level:					Convoker
 ; CL Abilities:					
 ; Realm Abilities:				
