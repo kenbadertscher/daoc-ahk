@@ -8,7 +8,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 
 ; Minstrel Spec information:		50 Instruments, 39 Slash, 21 Stealth
 ; CL Abilities:						
-; Realm Abilities:				
+; Realm Abilities:				    SoS 4
 
 
 SetKeyDelay, 18		; 18 milliseconds between keypresses
