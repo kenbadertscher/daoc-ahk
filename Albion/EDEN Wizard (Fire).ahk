@@ -10,7 +10,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 ; Wizard Spec information:		50 Earth, 20 Fire, 4  Ice
 ; Master Level:					Convoker
 ; CL Abilities:					
-; Realm Abilities:				
+; Realm Abilities:				Volcanic Pillar
 
 
 SetKeyDelay, 18		; 18 milliseconds between keypresses
