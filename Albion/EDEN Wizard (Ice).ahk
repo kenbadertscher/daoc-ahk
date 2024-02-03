@@ -9,7 +9,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 
 ; Wizard Spec information:		48 Ice, 24 Earth, 6 Fire
 ; CL Abilities:					
-; Realm Abilities:				
+; Realm Abilities:				MoC 5
 
 
 SetKeyDelay, 18		; 18 milliseconds between keypresses
