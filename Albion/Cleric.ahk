@@ -10,7 +10,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 ; Master Level:					Perfecter
 ; CL Abilities:					Resilience (Anytime Style), Focused Will (Mez Dampner), Focused Resolve (Root Dampner)
 ; Realm Abilities:				
-; Dex Breakpoints:				
+; Dex Breakpoints:				374
 
 
 SetKeyDelay, 18		; 18 milliseconds between keypresses
