@@ -6,7 +6,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 #IfWinActive Dark Age of Camelot		; Only let this affect DAoC
 
 
-; Cabalist Spec information:	
+; Cabalist Spec information:	47 spirit
 ; Master Level:					Convoker
 ; CL Abilities:					
 ; Realm Abilities:				
