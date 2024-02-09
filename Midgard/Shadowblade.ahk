@@ -9,7 +9,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 ; Spec information:						50 Left Axe, 30 Axe, 29 Crit Strike, 49 Envenom, 40 Stealth
 ; Master Level:							Battlemaster
 ; CL Abilities:							
-; Realm Abilities:						
+; Realm Abilities:						MoPain 5
 
 
 SetKeyDelay, 18		; 18 milliseconds between keypresses
