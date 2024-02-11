@@ -23,7 +23,7 @@ F13::				; Press Mouse Button 1 for Perf
 return
 
 
-F14::				; Press Mouse Button 2 for CD Chain
+F14::				; Press Mouse Button 2 for CD Chain  (n/a because 20 crit strike)
 	Send, {Right}	; Disease Poison
 	Send, {f3}		; Rib Separation
 	Send, {f2}		; Creeping Death
