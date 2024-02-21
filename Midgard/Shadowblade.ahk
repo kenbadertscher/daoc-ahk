@@ -23,7 +23,7 @@ F13::				; Press Mouse Button 1 for Perf
 return
 
 
-F14::				; Press Mouse Button 2 for CD Chain  (n/a because 20 crit strike)
+F14::				; Press Mouse Button 2 for CD Chain  (n/a because 29 crit strike)
 	Send, {Right}	; Disease Poison
 	Send, {f3}		; Rib Separation
 	Send, {f2}		; Creeping Death
@@ -69,6 +69,7 @@ F19::				; Press Mouse Button 7 for Essence Flames
 	Send, {p}		; Essence Flames
 	Send, {[}		; Essence Sear
 	Send, {v}		; Faultfinder
+	Send, {b}		; Soldier's Anticipation (CL Parry Buff)
 return
 
 
@@ -99,7 +100,7 @@ return
 
 
 F24::				; Press Mouse Button 12 for Purge
-	Send, {=}		; Assist
+	Send, {=}		; Purge
 return
 
 
