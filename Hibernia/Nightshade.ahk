@@ -46,8 +46,9 @@ F16::				; Press Mouse Button 4 for Pincer / Leaper
 return
 
 
-F17::				; Press Mouse Button 5 for Side Snare
-	Send, {f8}		; Solar Flare
+F17::				; Press Mouse Button 5 for Side Stun
+	Send, {f8}		; Ice Storm
+	Send, {f9}		; Tempest
 	Send, {f6}		; Meteor Shower
 	Send, {m}		; Lance of Night (Insta DD)
 return
