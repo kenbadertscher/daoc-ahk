@@ -44,20 +44,7 @@ F16::				; Press Mouse Button 4 for Side Stun
 	Send, {f5}		; Wild Call (Anytime)
 return
 
-
-F17::				; Press Mouse Button 5 for Essence Flames 
-	Send, {f7}		; Essence Sear
-	Send, {f6}		; Essence Flames
-return
-
-
-F18::				; Press Mouse Button 6 for Buff Shear
-	Send, {f9}		; Essence Shatter
-	Send, {f8}		; Essence Dampen
-return
-
-
-F19::				; Press Mouse Button 7 for assist bot
+F17::				; Press Mouse Button 5 for assist bot
 	Send, {-}		; Assist
 	Send, {f4}		; Kelgor's Wrath (Side Follow Up, Stun)
 	Send, {f3}		; Kelgor's Fist (Side Snare)
@@ -65,8 +52,24 @@ F19::				; Press Mouse Button 7 for assist bot
 	Send, {f5}		; Wild Call (Anytime)
 return
 
+F18::				; Press Mouse Button 6 for Evade Chain
+	Send, {j}		; Totemic Wrath (Evade Follow Up)
+	Send, {[}		; Totemic Fear (Evade Style)
+	Send, {j}		; Totemic Wrath (Evade Follow Up)
+	Send, {f5}		; Wild Call (Anytime)
+return
 
-F20::				; Press Mouse Button 8 for Parry Chain
+F19::				; Press Mouse Button 7 for Essence Flames 
+	Send, {f7}		; Essence Sear
+	Send, {f6}		; Essence Flames
+return
+
+F20::				; Press Mouse Button 8 for Buff Shear
+	Send, {f9}		; Essence Shatter
+	Send, {f8}		; Essence Dampen
+return
+
+F21::				; Press Mouse Button 9 for Parry Chain
 	Send, {p}		; Tribal Wrath
 	Send, {o}		; Tribal Assault
 	Send, {i}		; Tribal Rage
@@ -74,15 +77,6 @@ F20::				; Press Mouse Button 8 for Parry Chain
 	Send, {p}		; Tribal Wrath
 	Send, {f5}		; Wild Call (Anytime)
 return
-
-
-F21::				; Press Mouse Button 9 for Evade Chain
-	Send, {j}		; Totemic Wrath (Evade Follow Up)
-	Send, {[}		; Totemic Fear (Evade Style)
-	Send, {j}		; Totemic Wrath (Evade Follow Up)
-	Send, {f5}		; Wild Call (Anytime)
-return
-
 
 F22::				; Press Mouse Button 10 for Charge
 	Send, {.}		; Charge
