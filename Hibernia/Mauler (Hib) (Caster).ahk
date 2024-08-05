@@ -34,36 +34,12 @@ return
 F15::				    ; Press Mouse Button 3 to Energy DD and cast Magic Damage Buff
 	Send, {f6}		; Groundset 1500
 	Send, {,}		  ; Aura of the Farseer
-	Send, {f2}		; Gift of Albion (Energy DD)
+	Send, {f2}		; Gift of Hibernia (Energy DD)
 	Send, {f3}		; Gift of Arasthai (10% Magic Damage Buff)
 return
 
-
-F16::				    ; Press Mouse Button 4 to become a nukebot
-	Send, {f6}		; Groundset 1500
-	Send, {,}		  ; Aura of the Farseer
-	Send, {f2}		; Gift of Albion (Energy DD)
-return
-
-
-F17::				    ; Press Mouse Buttzon 5 to become an assist bot
-	Send, {f6}    ; Groundset 1500
-	Send, {-}		  ; Assist
-	Send, {,}		  ; Aura of the Farseer
-	Send, {f2}	  ; Gift of Albion (Energy DD)
-return
-
-
-F18::			      ; Press Mouse Button 6 to Amplify Melee Damage
-	Send, {u}		  ; Faultfinder
-	Send, {.}		  ; Aura of the Wildbull
-	Send, {f4}	  ; Gift of Tegashrig (Evade Buff)
-	Send, {f9}	  ; Essence Sear
-	Send, {f8}	  ; Essence Flames
-return
-
-
-F19::				    ; Press Mouse Button 7 to Side Stun w/ anytime backup
+; //change to mouse button 4
+F16::				    ; Press Mouse Button 4 to Side Stun w/ anytime backup
 	Send, {o}		  ; Wildbull's Staff (Side Stun followup)
 	Send, {i}		  ; Percussion (Side Stun)
 	Send, {o}		  ; Wildbull's Staff (Side Stun followup)
@@ -74,8 +50,8 @@ F19::				    ; Press Mouse Button 7 to Side Stun w/ anytime backup
 	Send, {down}  ; Test of Mind (Insta Powertap)
 return
 
-
-F20::				    ; Press Mouse Button 8 to Rear Stun w/ anytime backup
+; //change to mouse button 5
+F17::				    ; Press Mouse Button 5 to Rear Stun w/ anytime backup
 	Send, {k}	  	; Burning Cloud (Rear Stun)
 	Send, {l}	  	; Jolting Staff (Anytime Followup)
 	Send, {p}	  	; Wild Swing (Anytime)
@@ -83,8 +59,8 @@ F20::				    ; Press Mouse Button 8 to Rear Stun w/ anytime backup
 	Send, {down}	; Test of Mind (Insta Powertap)
 return
 
-
-F21::				    ; Press Mouse Button 9 to use Evade style w/ anytime backup
+; //change to mouse button 6
+F18::				    ; Press Mouse Button 6 to use Evade style w/ anytime backup
 	Send, {n}		  ; Turbid Staff (Anytime Followup)
 	Send, {;}		  ; Ember Clip (Evade Style)
 	Send, {p}		  ; Wild Swing (Anytime)
@@ -92,6 +68,29 @@ F21::				    ; Press Mouse Button 9 to use Evade style w/ anytime backup
 	Send, {down}	; Test of Mind (Insta Powertap)
 return
 
+; // change to mouse button 7
+F19::				    ; Press Mouse Button 7 to become a nukebot
+	Send, {f6}		; Groundset 1500
+	Send, {,}		  ; Aura of the Farseer
+	Send, {f2}		; Gift of Hibernia (Energy DD)
+return
+
+; // change to mouse button 8
+F20::				    ; Press Mouse Buttzon 8 to become an assist bot
+	Send, {f6}    ; Groundset 1500
+	Send, {-}		  ; Assist
+	Send, {,}		  ; Aura of the Farseer
+	Send, {f2}	  ; Gift of Hibernia (Energy DD)
+return
+
+; change to 9
+F21::			      ; Press Mouse Button 9 to Amplify Melee Damage
+	Send, {u}		  ; Faultfinder
+	Send, {.}		  ; Aura of the Wildbull
+	Send, {f4}	  ; Gift of Tegashrig (Evade Buff)
+	Send, {f9}	  ; Essence Sear
+	Send, {f8}	  ; Essence Flames
+return
 
 F22::				    ; Press Mouse Button 10 to cast Conversion Buff on myself
 	Send, {y}		  ; Target self

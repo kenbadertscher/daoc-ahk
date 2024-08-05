@@ -17,86 +17,81 @@ SetKeyDelay, 18		; 18 milliseconds between keypresses
 ^!r::Reload			; Reload the script using Ctrl+Alt+R
 
 
-F13::				; Press Mouse Button 1 to use Shortbow
-	Send, {up}		; Shortbow 
+F13::				; Press Mouse Button 1 to Rear Stun
+	Send, {f3}		; Supernova (Rear Style Followup, 7 sec Stun)
+	Send, {f2}		; Hurricane (Rear Style)
+	Send, {f3}		; Supernova (Rear Style Followup, 7 sec Stun)
+  Send, {f1}    ; Mauler (Blunt Anytime)
 return
-
 
 F14::				; Press Mouse Button 2 to Increase Damage
-	Send, {i}		; Flurry
-	Send, {o}		; Triple Wield
-	Send, {p}		; Banespike
+	Send, {i}		  ; Flurry
+	Send, {o}		  ; Triple Wield
+	Send, {p}		  ; Banespike
+return
+
+F15::				; Press Mouse Button 3 is Unset
+  Send, {j}     ; Frozen Medal of Valor use2 Weariness, all stat and melee resist debuff
+  Send, {k}     ; Midsummer Wrap use, pbaoe abs debuff
 return
 
 
-F15::				; Unset
+F16::				; Press Mouse Button 4 for Side Stun
+	Send, {f5}		; Tempest (Side Style Followup)
+	Send, {f4}		; Ice Storm (Side Stun, 5 sec Stun)
+  Send, {f5}		; Tempest (Side Stun Followup)
+  Send, {f1}    ; Mauler (Blunt Anytime)
 return
 
-
-F16::				; Press Mouse Button 4 to 2h and Side Snare
-	Send, {j}		; Weariness (Melee Vuln. Debuff - Medal of Honor)
-	Send, {k}		; Dark Sundering (Abs Debuff - Midsummer's Wrap)
-	Send, {f1}		; Tempest (Side Style Followup)
-	Send, {f2}		; Ice Storm (Side Stun)
-	Send, {f3}		; Supernova (Rear Style Followup)
-	Send, {f4}		; Hurricane (Rear Snare)
-	Send, {f1}		; Tempest (Side Stun Followup)
-	Send, {f3}		; Supernova (Rear Style Followup)
+F17::				; Mouse Button 5 for Side Snare
+  Send, {f6}    ; Solar Flare (Side Snare, 40% for 23 sec)
+  Send, {f1}    ; Mauler (Blunt Anytime)
 return
 
-
-F17::				; Mouse Button 5 is Unset
-return
-
-
-F18::				; Press Mouse Button 6 for 10s Parry Stun
-	Send, {f5}		; Devastating Blow (Parry Style Followup)
-	Send, {f6}		; Stunning Blow (Parry Style)
-	Send, {f5}		; Devastating Blow (Parry Style Followup)
-	Send, {;}		; Gale (Front Style Followup)
-	Send, {l}		; Snow Shower (Front Style)
+F18::				; Mouse Button 6 for ASR Evade Chain
+	Send, {f7}		; Blizzard (Evade Follow Up, 21% ASR)
+	Send, {f8}		; Blinding Rain (Evade Style)
+	Send, {f7}		; Blizzard (Evade Follow Up, 21% ASR)
+	Send, {;}		  ; Gale (Front Style Followup)
+	Send, {l}		  ; Snow Shower (Front Style)
 return
 
 
 F19::				; Press Mouse Button 7 to be an Assist Bot
 	Send, {-}		; Assist
 	Send, {e}		; Stick
-	Send, {f1}		; Tempest (Side Style Followup)
-	Send, {f2}		; Ice Storm (Side Stun)
+	Send, {f5}		; Tempest (Side Style Followup)
+	Send, {f4}		; Ice Storm (Side Stun)
 	Send, {f3}		; Supernova (Rear Style Followup)
-	Send, {f4}		; Hurricane (Rear Snare)
-	Send, {f1}		; Tempest (Side Stun Followup)
+	Send, {f2}		; Hurricane (Rear Snare)
+	Send, {f5}		; Tempest (Side Stun Followup)
 	Send, {f3}		; Supernova (Rear Style Followup)
 return
 
-
-F20::				; Mouse Button 8 for Parry Chain
+F20::				; Mouse Button 8 for AF Debuff Parry Chain
 	Send, {f9}		; Twin Star (Parry Chain)
 	Send, {f10}		; Tornado (Parry AF Debuff)
 	Send, {f9}		; Twin Star (Parry Chain)
-	Send, {;}		; Gale (Front Style Followup)
-	Send, {l}		; Snow Shower (Front Style)
+	Send, {;}		  ; Gale (Front Style Followup)
+	Send, {l}		  ; Snow Shower (Front Style)
 return
 
-
-F21::				; Mouse Button 9 for Evade Chain
-	Send, {f7}		; Blizzard (Evade Follow Up)
-	Send, {f8}		; Blinding Rain (Evade Style)
-	Send, {f7}		; Blizzard (Evade Follow Up)
-	Send, {;}		; Gale (Front Style Followup)
-	Send, {l}		; Snow Shower (Front Style)
+F21::				; Press Mouse Button 9 for 10s Parry Stun
+	Send, {m}		; Devastating Blow (Parry Style Followup)
+	Send, {n}		; Stunning Blow (Parry Style)
+	Send, {m}		; Devastating Blow (Parry Style Followup)
+	Send, {;}		  ; Gale (Front Style Followup)
+	Send, {l}		  ; Snow Shower (Front Style)
 return
 
 
 F22::				; Press Mouse Button 10 to Charge
-	Send, {n}		; Charge
+	Send, {[}		; Charge
 return
-
 
 F23::				; Press Mouse Button 11 to Assist
 	Send, {-}		; Assist
 return
-
 
 F24::				; Mouse Button 12 for Purge
 	Send, {=}		; Purge

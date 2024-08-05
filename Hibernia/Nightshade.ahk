@@ -6,8 +6,8 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 #IfWinActive Dark Age of Camelot	; Only let this affect DAoC
 
 
-; Spec information:		
-; Master Level:					
+; Spec information:		40 Stealth, 34 Blades, 49 Envenom, 34 Crit Strike, 44 Celtic Dual
+; Master Level:			  Spymaster
 ; CL Abilities:					
 ; Realm Abilities:				
 

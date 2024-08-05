@@ -71,7 +71,7 @@ return
 
 F23::				; Presss Mouse Button 11 to Assist
 	Send, {-}		; Assist 1
-	Send, {=}		; Assist 2
+	
 return
 
 

@@ -6,7 +6,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 #IfWinActive Dark Age of Camelot		; Only let this affect DAoC
 
 
-; Paladin Spec information:		
+; Paladin Spec information:		48 Chants, 35 Shield, 39 Two Handed, 
 ; Master Level:					Battlemaster
 ; CL Abilities:					
 ; Realm Abilities:				
@@ -37,7 +37,7 @@ return
 
 F16::				; Press Mouse Button 4 for Side Snare
 	Send, {.}		; 2h Weapon
-	Send, {f5}		; Onslaught (Rear Snare)
+	Send, {f5}		; Onslaught (Side Snare)
 	Send, {f8}		; Obfuscate (Anytime)
 return
 

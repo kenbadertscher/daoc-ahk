@@ -35,27 +35,7 @@ F15::			; Press Mouse Button 3 for Long Shot
 return
 
 
-F16::			; Press Mouse Button 4 for Crit Shot 
-	Send, {Up}	; Equip Bow
-	Send, {F1}	; Critical Shot
-	Send, {F3}	; Standard Shot
-return
-
-
-F17::			; Press Mouse Button 5 for Power Shot
-	Send, {Up}	; Equip Bow
-	Send, {F2}	; Power Shot
-	Send, {F3}	; Standard Shot
-return
-
-
-F18::			; Press Mouse Button 6 for Point Blank Shot
-	Send, {Up}	; Equip Bow
-	Send, {F7}	; Point Blank Shot
-return
-
-
-F19::			; Press Mouse Button 7 for Side Style
+F16::			; Press Mouse Button 7 for Side Style
 	Send, {Down}	; Equip Spear
 	Send, {Right}	; Midsummer Ring
 	Send, {[}	; Perforate (Side Snare)
@@ -65,7 +45,7 @@ F19::			; Press Mouse Button 7 for Side Style
 return
 
 
-F20::			; Press Mouse Button 8 for Rear Style
+F17::			; Press Mouse Button 8 for Rear Style
 	Send, {Down}	; Equip Spear
 	Send, {Right}	; Midsummer Ring
 	Send, {i}	; Razor Edge (Rear Stun)
@@ -75,7 +55,7 @@ F20::			; Press Mouse Button 8 for Rear Style
 return
 
 
-F21::			; Press Mouse Button 9 for Evade Style
+F18::			; Press Mouse Button 9 for Evade Style
 	Send, {Down}	; Equip Spear
 	Send, {Right}	; Midsummer Ring
 	Send, {.}	; Parry Buff
@@ -84,6 +64,27 @@ F21::			; Press Mouse Button 9 for Evade Style
 	Send, {l}	; Raze (Evade Follow-up)
 	Send, {;}	; Stab (Atk Spd Slow, Evade Style)
 	Send, {n}	; Whirling Spear (Anytime)
+return
+
+F19::			; Press Mouse Button 4 for Crit Shot 
+	Send, {Up}	; Equip Bow
+	Send, {F1}	; Critical Shot
+  Send, {F3}	; Standard Solo Shot
+  Send, {=}  ; Standard Shot
+return
+
+
+F20::			; Press Mouse Button 5 for Power Shot
+	Send, {Up}	; Equip Bow
+	Send, {F2}	; Power Shot
+	Send, {F3}	; Standard Solo Shot
+  Send, {=}  ; Standard Shot
+return
+
+
+F21::			; Press Mouse Button 6 for Point Blank Shot
+	Send, {Up}	; Equip Bow
+	Send, {F7}	; Point Blank Shot
 return
 
 
