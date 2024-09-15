@@ -19,7 +19,7 @@ SetKeyDelay, 18		; 18 milliseconds between keypresses
 
 
 F13::			    ; Press Mouse Button 1 for Double Bolt
-	Send, {f1}	    ; Disperse Vigor (AoE Con Debuff)
+	Send, {f1}	    ; Disperse Vigor Level 18 (AoE Con Debuff)
 	Send, {i}	    ; Bolt of Uncreation (Spec Bolt)
 	Send, {o}	    ; Void Abyss (Baseline Bolt)
 return
@@ -38,13 +38,12 @@ return
 
 
 F16::			    ; Press Mouse Button 4 for Energy Nuke
-	Send, {f5}  	; Greater Mana Annihilation (Energy Nuke)
+	Send, {f5}  	; Shadowdoom (Cold Nuke)
 return
 
 
 F17::			    ; Press Mouse Button 5 for Energy Debuff
-	Send, {f1}	    ; Disperse Vigor (AoE Con Debuff)
-	Send, {f4}	    ; Void Dissipation (50% Energy Debuff)
+
 return
 
 
@@ -54,6 +53,7 @@ return
 
 
 F19::			    ; Press Mouse Button 7 for AoE Mez
+	Send, {F4}		; Annihilate Soul (Insta Spirit Debuff)
 	Send, {f7}	    ; Paralyzing Veil
 return
 

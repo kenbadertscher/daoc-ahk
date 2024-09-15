@@ -1,4 +1,4 @@
-﻿#NoEnv									; For performance and compatibility with future AutoHotkey releases.
+#NoEnv									; For performance and compatibility with future AutoHotkey releases.
 #SingleInstance Force					; Skips the dialog box for relaunching the script after an edit
 #Warn                 					; Enable warnings to assist with detecting common errors.
 SendMode Event            				; To make this work with DAoC. ("Input" does not seem to work well.)
@@ -8,7 +8,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 ; TODO:  This file is based on my Eldritch file.  Clean up and rename the abilities.
 
 ; Wizard Spec information:		50 Earth, 20 Fire, 4  Ice
-; Master Level:					Convoker
+; Master Level:					      Convoker
 ; CL Abilities:					
 ; Realm Abilities:				
 
@@ -20,8 +20,8 @@ SetKeyDelay, 18		; 18 milliseconds between keypresses
 
 F13::				; Press Mouse Button 1 for Triple Bolt
 	Send, {f1}		; Flame Spear (Spec Bolt)
-	Send, {f2}		; Bolt of Uncreation (Spec Bolt)
-	Send, {f3}		; Void Abyss (Baseline Bolt)
+	Send, {f2}		; Flaming Rocks (Major) (Baseline Bolt)
+	Send, {f3}		; Lava Force (Earth Bolt)
 return
 
 

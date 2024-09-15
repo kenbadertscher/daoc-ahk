@@ -6,94 +6,92 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 #IfWinActive Dark Age of Camelot		; Only let this affect DAoC
 
 
-; Spec information:		
-; Master Level:					
-; CL Abilities:					
-; Realm Abilities:				
+; Spec:				47 Odin's Will, 42 Mending, 41 Spear, 10 Parry, 8 Shield
+; ML Path:			Warlord	
+;   Timer 1			Bolstering Battlecry (PBAoE 10% Omni Heal)
+;   Timer 2 		Cowering Bellow (Pet Scare)
+;   Timer 3 		~Guided Strike~ (10% Crit Chance), Resilient Will (5% enemy miss chance), Cleansing Aura (PBAoE DoT Dampner)
+;   Timer 4 		~Energizing Aura~ (PBAoE 50% Fatigue Cost Discount), Defending Martyr (PBAoE Heal, costs 90% life)
+;   Timer 5 		~Warguard~ (PBAoE Melee Damage Absorb), Leadership (15% level boost for damage variance)
+; CL Abilities:		
+;   Rogue			Spine Crack, Faded Quickness, Graceful Fall, Recoil
+;   Seer			Force of the Abyss
+; Realm Abilities @	RR9L8: 
+;   Actives: 		Charge 5, Purge 3, IP 3, ST 1, 
+;   Passives:		AoM 5, MoParry 5, Det 3, MoPain 2, WP 2, WH2, MoFocus 2, LW1
 
 
-SetKeyDelay, 18		; 18 milliseconds between keypresses
+SetKeyDelay, 11		; 11 milliseconds between keypresses
 
 ^!r::Reload			; Reload the script using Ctrl+Alt+R
 
 
-F13::				; Press Mouse Button 1 to Pin (Energy)
-	Send, {Down}		; Equip 1h Weapon
-	Send, {f1}		; Pin (Shield Snare)
+F13::				; Press Mouse Button 1 to DD Dump
+	Send, {j}		; Odin's Major Retribution (Cone Pulse DD)
+	Send, {k}		; Valhalla's Disdain (Insta Cone DD)
+	Send, {l}		; Odin's Greater Ram (Insta DD)
+	Send, {j}		; Odin's Major Retribution (Cone Pulse DD) (turn off)
 return
 
 
-F14::				; Press Mouse Button 2 to Mangle
-	Send, {Down}		; Equip 1h Weapon
-	Send, {f2}		; Mangle (Side Stun)
+F14::				; Press Mouse Button 2 to Numb & Engage
+	Send, {Down}	; Equip 1h Weapon
+	Send, {;}		; Numb
+	Send, {n}		; Engage
 return
 
 
-F15::				; Press Mouse Button 3 for Buff Shear
-	Send, {o}		; Essence Shatter
-	Send, {i}		; Essence Dampen
-	Send, {o}		; Essence Shatter
+F15::				; Press Mouse Button 3 to Warlord Dump
+	Send, {F7}		; Odin's Temperence (Group Ablative)
+	Send, {F8}		; Guiding Strike (Warlord Crit Chance Increase, Timer 3)
+	Send, {F9}		; Energizing Aura (Warlord Endo Redux, Timer 4)
+	Send, {F10}		; Warguard (Warlord Melee Damage Dampner, Timer 5)
 return
 
 
 F16::				; Press Mouse Button 4 to Side Snare w/ anytime backup
 	Send, {Up}		; Equip 2h Weapon
-	Send, {F9}		; Guiding Strike (Warlord Crit Chance Increase)
-	Send, {F8}		; Odin's Temperence (Group Ablative)
-	Send, {f1}		; Perforate (Side Snare)
-	Send, {f2}		; Whirling Spear (Anytime)
-	Send, {f1}		; Perforate (Side Snare)
+	Send, {f3}		; Perforate (Side Snare)
+	Send, {f2}		; Roundhouse (200 Crush DD, Windmill Follow-up)
+	Send, {f1}		; Windmill (Anytime)
+	Send, {f3}		; Perforate (Side Snare)
 return
 
 
 F17::				; Press Mouse Button 5 to Rear Stun w/ anytime backup
 	Send, {Up}		; Equip 2h Weapon
-	Send, {F9}		; Guiding Strike (Warlord Crit Chance Increase)
-	Send, {F8}		; Odin's Temperence (Group Ablative)
-	Send, {f3}		; Razor Edge (Rear Stun)
-	Send, {f2}		; Whirling Spear (Anytime)
-	Send, {f3}		; Razor Edge (Rear Stun)
+	Send, {f4}		; Razor Edge (Rear Stun)
+	Send, {f2}		; Roundhouse (200 Crush DD, Windmill Follow-up)
+	Send, {f1}		; Windmill (Anytime)
+	Send, {f4}		; Razor Edge (Rear Stun)
 return
 
 
 F18::				; Press Mouse Button 6 to use Parry Style style w/ anytime backup
 	Send, {Up}		; Equip 2h Weapon
-	Send, {F9}		; Guiding Strike (Warlord Crit Chance Increase)
-	Send, {F8}		; Odin's Temperence (Group Ablative)
-	Send, {F4}		; Extend Reach (Parry Follow Up)
-	Send, {F5}		; Return Thrust (Parry Style)
-	Send, {F4}		; Extend Reach (Parry Follow Up)
-	Send, {F6}		; Roundhouse (Anytime Follow Up, AoE Crush DD)
-	Send, {F7}		; Windmill (Anytime)
+	Send, {F5}		; Extend Reach (Parry Follow Up)
+	Send, {F6}		; Return Thrust (Parry Style)
+	Send, {F5}		; Extend Reach (Parry Follow Up)
+	Send, {f2}		; Roundhouse (200 Crush DD, Windmill Follow-up)
+	Send, {f1}		; Windmill (Anytime)
+	Send, {F5}		; Extend Reach (Parry Follow Up)
+	Send, {o}		; Faded Quickness (Champ Evade Buff)
 return
 
 
-F19::				; Unset - reserved for essence flames
-	Send, {.}		; Essence Sear
-	Send, {,}		; Essence Flames
-	Send, {.}		; Essence Sear
+F19::				; Press Mouse Button 7 to Spine Crack
+	Send, {Down}	; Equip 1h Weapon
+	Send, {i}		; Spine Crack
 return
 
 
-F20::				; Press Mouse Button 8 to Rear Snare w/ anytime backup
-	Send, {F10}		; Equip Scythe
-	Send, {[}		; Winter's Scythe (Rear Snare followup)
-	Send, {p}		; Sawgrass (Rear Snare)
-	Send, {[}		; Winter's Scythe (Rear Snare followup)
-	Send, {f3}		; Taunting Scythe (Anytime)
-	Send, {f2}		; Nature's Blight (Insta DD)
-	Send, {F1}		; Barkshell (Group Ablative)
+F20::				; Press Mouse Button 8 to 
+
 return
 
 
-F21::				; Press Mouse Button 9 for Parry style w/ anytime backup
-	Send, {F10}		; Equip Scythe
-	Send, {k}		; Thorny Shield (Parry followup)
-	Send, {j}		; Sawgrass (Parry Style)
-	Send, {k}		; Thorny Shield (Parry followup)
-	Send, {f3}		; Taunting Scythe (Anytime)
-	Send, {f2}		; Nature's Blight (Insta DD)
-	Send, {F1}		; Barkshell (Group Ablative)
+F21::				; Press Mouse Button 9 to
+
 return
 
 
@@ -108,7 +106,7 @@ return
 
 
 F24::				; Press Mouse Button 12 to Purge
-	Send, {F10}		; Purge
+	Send, {=}		; Purge
 return
 
 

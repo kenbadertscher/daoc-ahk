@@ -1,69 +1,64 @@
-﻿#NoEnv            			; For performance and compatibility with future AutoHotkey releases.
+#NoEnv            			; For performance and compatibility with future AutoHotkey releases.
 #Warn                 			; Enable warnings to assist with detecting common errors.
 SendMode Event            		; To make this work with DAoC. ("Input" does not seem to work well.)
 SetWorkingDir %A_ScriptDir%	    	; Ensures a consistent starting directory.
 SetTitleMatchMode, 2        		; Match parts of the window title.
-;#IfWinActive Dark Age of Camelot	; Only let this affect DAoC
+; #IfWinActive Dark Age of Camelot	; Only let this affect DAoC
 #SingleInstance Force			; Skips the dialog box for relaunching the script after an edit
 
 ; Reload the script using Ctrl+Alt+R
 ^!r::Reload
 
-F12:: 		; For afk jumping 
+Seconds(x,y) {
+  Random, value, %x%, %y%
+  Return value
+}
+
+; Pickup:   
+;   SendInput, {H down}	; Craft the item on slot 22
+;   Sleep, % Seconds(40, 80)
+;   SendInput, {H up}	; Craft the item on slot 22
+;   Sleep, % Seconds(40, 80)
+;   SendInput, {G down}	; Craft the item on slot 22
+;   Sleep, % Seconds(40, 80)
+;   SendInput, {G up}	; Craft the item on slot 22
+;   Sleep, % Seconds(40, 80)
+; return
+
+
+F12:: 		; Pickup stardust
 Loop
-{
-Send, {F}	; Craft the item on slot 22
-Sleep, 10500	; Sleep for 10.5 seconds
-}
+  {
+    SendInput, {H down}	; Craft the item on slot 22
+    Sleep, % Seconds(10,20)
+    SendInput, {H up}	; Craft the item on slot 22
+    SendInput, {G down}	; Craft the item on slot 22
+    Sleep, % Seconds(10,20)
+    SendInput, {G up}	; Craft the item on slot 22
+    Sleep, % Seconds(12000,20000)
+ }
 return
 
-
-F11::		; To purchase alchemy mats boxes
-Loop,
-{
-Click 
-Sleep, 3500
-Send, 1
-Sleep, 1000
-}
+F11:: 		; sprint in place
+Loop
+  {
+    SendInput, {f down}	
+    Sleep, % Seconds(10,20)
+    SendInput, {f up}	; 
+    Sleep, % Seconds(10000,20000)
+ }
 return
 
-
-F10:: 		; For unboxing Alch components
-Loop, 
-{
-MouseClick, left, 1748, 335		; Pick Up Box in slot #4
-Sleep, 200
-MouseClick, left, 1748, 320		; Place box in slot #3
-Sleep, 200
-MouseClick, left, 1775, 350		; Reduce count by 1F 
-Sleep, 200
-MouseClick, left, 1825, 385		; Accept
-Sleep, 200
-MouseClick, right, 1748, 335		; Select Box in slot #4
-Sleep, 200
-Send, {1}				; Use item selected
-Sleep, 500
-MouseClick, left, 1748, 320		; Pick Up box in slot #3
-Sleep, 200
-MouseClick, left, 1748, 335		; Place Box in slot #4
-Sleep, 200
-MouseClick, left, 1775, 365		; Reduce count by 1
-Sleep, 200
-MouseClick, left, 1825, 400		; Accept
-Sleep, 200
-MouseClick, right, 1748, 320		; Select box in slot #3
-Sleep, 200
-Send, {1}				; Use item selected
-Sleep, 500
-}
-return
-
-
-F9::		; For jumping
-Loop,
-{
-Send, {space}
-Sleep, 10000
-}
+F10:: 		; Turbo mode Pickup stardust 
+Loop
+  {
+   SendInput, {H down}	; Craft the item on slot 22
+   Sleep, % Seconds(40, 80)
+   SendInput, {H up}	; Craft the item on slot 22
+   Sleep, % Seconds(40, 80)
+   SendInput, {G down}	; Craft the item on slot 22
+   Sleep, % Seconds(40, 80)
+   SendInput, {G up}	; Craft the item on slot 22
+   Sleep, % Seconds(40, 80)
+ }
 return

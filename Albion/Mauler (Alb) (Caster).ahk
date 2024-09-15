@@ -12,7 +12,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 ; Realm Abilities:				
 
 
-SetKeyDelay, 18		; 18 milliseconds between keypresses
+SetKeyDelay, 18		; 11 milliseconds between keypresses
 
 ^!r::Reload			; Reload the script using Ctrl+Alt+R
 

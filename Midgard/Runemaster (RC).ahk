@@ -24,6 +24,8 @@ return
 
 
 F14::				; Mouse Button 2 is Unset
+	Send, {i}		; Runie Cloak
+	Send, {f7}		; Aura of Magic Power (Arcane-Infused Armband /use2)
 return
 
 
@@ -35,7 +37,7 @@ return
 
 F16::				; Press Mouse Button 4 for Energy Nuke
 	Send, {f4}		; Rune of Thunder (Spec Energy Nuke)
-	Send, {f7}		; Aura of Magic Power (Arcane-Infused Armband /use2)
+	
 return
 
 

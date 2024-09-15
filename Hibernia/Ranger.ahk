@@ -35,7 +35,26 @@ F15::				; Press Mouse Button 3 for Long Shot
 return
 
 
-F16::				; Press Mouse Button 4 for Side Stun
+F16::				; Press Mouse Button 4 for Power Shot   ; change to mouse button 4
+	Send, {Up}		; Equip Bow
+	Send, {F2}		; Power Shot
+	Send, {p}		; Standard Solo Shot
+	Send, {F3}		; Standard Shot
+return
+
+
+F17::				; Press Mouse Button 5 for Energy Shot 
+	Send, {Up}		; Equip Bow
+	Send, {F1}		; Energy Shot
+return
+
+
+F18::				; Press Mouse Button 6 for Point Blank Shot
+	Send, {Up}		; Equip Bow
+	Send, {F7}		; Point Blank Shot
+return
+
+F19::				; Press Mouse Button 7 for Side Stun  ; change to mouse button 7
 	Send, {Left}	; Tracker's Alacrity (Evade Buff)
 	Send, {Right}	; Soldier's Anticipation (Parry Buff)
 	Send, {m}		; Dark Sundering (Absorb Debuff)
@@ -45,7 +64,7 @@ F16::				; Press Mouse Button 4 for Side Stun
 return
 
 
-F17::				; Press Mouse Button 5 for Rear Snare
+F20::				; Press Mouse Button 8 for Rear Snare
 	Send, {Left}	; Tracker's Alacrity (Evade Buff)
 	Send, {Right}	; Soldier's Anticipation (Parry Buff)
 	Send, {n}		; Withered Vitality (Str/Con Debuff)
@@ -55,7 +74,7 @@ F17::				; Press Mouse Button 5 for Rear Snare
 return
 
 
-F18::				; Press Mouse Button 6 for Evade Style & Anytime
+F21::				; Press Mouse Button 9 for Evade Style & Anytime
 	Send, {Left}	; Tracker's Alacrity (Evade Buff)
 	Send, {Right}	; Soldier's Anticipation (Parry Buff)
 	Send, {;}		; Magnanimous Aura (Style Dmg Absorb)
@@ -64,25 +83,6 @@ F18::				; Press Mouse Button 6 for Evade Style & Anytime
 	Send, {f10}		; Tornado (Evade Style, AF Debuff)
 	Send, {o}		; Twin Star I (Evade Follow-Up, Stun)
 	Send, {i}		; Meteor Shower (Anytime)
-return
-
-
-F19::				; Press Mouse Button 7 for Power Shot
-	Send, {Up}		; Equip Bow
-	Send, {F2}		; Power Shot
-	Send, {F3}		; Standard Shot
-return
-
-
-F20::				; Press Mouse Button 8 for Energy Shot 
-	Send, {Up}		; Equip Bow
-	Send, {F1}		; Energy Shot
-return
-
-
-F21::				; Press Mouse Button 9 for Point Blank Shot
-	Send, {Up}		; Equip Bow
-	Send, {F7}		; Point Blank Shot
 return
 
 

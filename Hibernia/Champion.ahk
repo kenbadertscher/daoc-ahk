@@ -44,6 +44,7 @@ return
 
 
 F17::				; Press Mouse Button 5 to Rear Snare
+  Send, {j}     ; Badge of Valor (RR5 - armor ABS reversal)
 	Send, {f10}		; Greater Atony (Str/Con Debuff and Bladeturn Cancel)
 	Send, {Left}	; Equip 2h Weapon
 	Send, {f3}		; Gigantic Blow (rear snare)
@@ -83,8 +84,8 @@ F21::				; Press Mouse Button 9 for Parry ASR
 return
 
 
-F22::				; Press Mouse Button 10 for Charge
-	Send, {Down}	; Charge
+F22::				; Press Mouse Button 10 for Wrath of Champions
+	Send, {Down}	; WoC
 return
 
 

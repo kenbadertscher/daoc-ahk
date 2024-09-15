@@ -1,4 +1,4 @@
-﻿#NoEnv									; For performance and compatibility with future AutoHotkey releases.
+#NoEnv									; For performance and compatibility with future AutoHotkey releases.
 #SingleInstance Force					; Skips the dialog box for relaunching the script after an edit
 #Warn                 					; Enable warnings to assist with detecting common errors.
 SendMode Event            				; To make this work with DAoC. ("Input" does not seem to work well.)
@@ -41,6 +41,15 @@ F16::				; Press Mouse Button 4 to Side Snare
 	Send, {f4}		; Cobra's Bite (Side Snare follow up, 26 dmg dot)
 		Sleep, 30
 	Send, {f2}		; Vampire Feint (anytime follow up, 25% crit chance)	Send, {f1}		; Asp's Bite (anytime)
+
+  ; add banespike (banelord dps add)
+
+  ; add primal agony (banelord -10% hp)
+  ; add impervious skin (vamp melee resist)
+  ; add deflect attack (vamp parry buff)
+  ; add call of the raven (fumble)
+  ; add impress amnseia (vamp reduce ra and skill buffs)
+  ; add self destruction (vamp buff shear)
 return
 
 
@@ -51,6 +60,13 @@ F17::				; Press Mouse Button 5 to Rear Stun
 	Send, {f5}		; Vampire's Bite (Rear Stun)
 	Send, {f2}		; Vampire Feint
 	Send, {f1}		; Asp's Bite
+
+  ; add banespike (banelord dps add)
+
+  ; add primal agony (banelord -10% hp)
+  ; add destroy magic (vamp magic resist)
+  ; add 
+  ; add chaotic power (banelord )
 return
 
 
