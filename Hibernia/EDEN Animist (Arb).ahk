@@ -69,7 +69,7 @@ return
 
 
 F22::				; Press Mouse Button 10 for MoC
-	Send, {f10}		; Mastery of Concentration
+	Send, {m}		; Mastery of Concentration
 return
 
 
