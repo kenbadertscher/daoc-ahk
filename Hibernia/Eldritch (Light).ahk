@@ -6,7 +6,7 @@ SetTitleMatchMode, 2        			; Match parts of the window title.
 #IfWinActive Dark Age of Camelot		; Only let this affect DAoC
 
 
-; Pac Healer Spec information:  47 Void, 19 Light, 18 Mana
+; Pac Healer Spec information:  47 Light, 26 Mana, 5 Void
 ; Master Level:  	Convoker
 ; CL Abilities:  	Resilience (Anytime Style), Focused Will (Mez Dampner), Focused Resolve (Root Dampner)
 ; Realm Abilities: 	
@@ -48,23 +48,23 @@ return
 
 
 F18::			    ; Press Mouse Button 6 for Disease
-	Send, {f6}	    ; Entropic Affliction
+	Send, {f6}	    ; Enervating Affliction
 return
 
 
 F19::			    ; Press Mouse Button 7 for AoE Mez
 	Send, {F4}		; Annihilate Soul (Insta Spirit Debuff)
-	Send, {f7}	    ; Paralyzing Veil
+	Send, {f7}	    ; Paralyzing Cloud
 return
 
 
 F20::			    ; Press Mouse Button 8 for Root
-	Send, {f8}	    ; Soul Clutch (Root)
+	Send, {f8}	    ; Soul Hold (Root)
 return
 
 
 F21::			    ; Press Mouse Button 9 for Snare Nuke
-	Send, {f9}  	; Greater Entangling Blast
+	Send, {f9}  	; Webbing Blast
 return
 
 

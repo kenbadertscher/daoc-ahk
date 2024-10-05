@@ -24,6 +24,7 @@ return
 
 
 F14::				; Press Mouse Button 2 for CD Chain  (n/a because 29 crit strike)
+	Send, {n}		; Equip 1-hand Weapon
 	Send, {Right}	; Disease Poison
 	Send, {f3}		; Rib Separation
 	Send, {f2}		; Creeping Death
