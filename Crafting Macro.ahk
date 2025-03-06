@@ -1,8 +1,8 @@
 #NoEnv            			; For performance and compatibility with future AutoHotkey releases.
 #Warn                 			; Enable warnings to assist with detecting common errors.
-SendMode Event            		; To make this work with DAoC. ("Input" does not seem to work well.)
+; SendMode Event            		; To make this work with DAoC. ("Input" does not seem to work well.)
 SetWorkingDir %A_ScriptDir%	    	; Ensures a consistent starting directory.
-SetTitleMatchMode, 2        		; Match parts of the window title.
+; SetTitleMatchMode, 2        		; Match parts of the window title.
 ; #IfWinActive Dark Age of Camelot	; Only let this affect DAoC
 #SingleInstance Force			; Skips the dialog box for relaunching the script after an edit
 
@@ -26,15 +26,12 @@ Seconds(x,y) {
 ; return
 
 
-F12:: 		; Pickup stardust
+e:: 		; Pickup stardust
 Loop
   {
-    SendInput, {H down}	; Craft the item on slot 22
+    SendInput, {E down}	; Craft the item on slot 22
     Sleep, % Seconds(10,20)
-    SendInput, {H up}	; Craft the item on slot 22
-    SendInput, {G down}	; Craft the item on slot 22
-    Sleep, % Seconds(10,20)
-    SendInput, {G up}	; Craft the item on slot 22
+    SendInput, {E up}	; Craft the item on slot 22
     Sleep, % Seconds(12000,20000)
  }
 return
