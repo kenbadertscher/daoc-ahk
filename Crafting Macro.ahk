@@ -26,7 +26,7 @@ Seconds(x,y) {
 ; return
 
 
-e:: 		; Pickup stardust
+F9:: 		; Pickup stardust
 Loop
   {
     SendInput, {E down}	; Craft the item on slot 22

@@ -30,7 +30,8 @@ return
 
 F14::				; Press Mouse Button 2 to Lifetap (Energy)
 	Send, {m}		; Equip 1h Weapon
-	Send, {n}		; Immolation (Lifetap)
+	Send, {l}	; Immolation (Big Lifetap)
+	Send, {n}		; Cycle of Death (Lifetap)
 	Send, {f2}		; Nature's Blight (Insta DD)
 return
 
@@ -101,7 +102,7 @@ return
 
 
 F22::				; Press Mouse Button 10 to MoC
-  Send, {.}   ; Mastery of Concentration
+  Send, {up}   ; Mastery of Concentration
 return
 
 
@@ -112,6 +113,22 @@ return
 
 F24::				; Press Mouse Button 12 to Purge
 	Send, {=}		; Purge
+return
+
+
+Seconds(x,y) {
+  Random, value, %x%, %y%
+  Return value
+}
+
+^!F9:: 		; sprint in place
+Loop
+  {
+    SendInput, {f down}	
+    Sleep, % Seconds(10,20)
+    SendInput, {f up}	; 
+    Sleep, % Seconds(10000,20000)
+ }
 return
 
 

@@ -29,6 +29,7 @@ SetKeyDelay, 11		; 11 milliseconds between keypresses
 
 
 F13::				; Press Mouse Button 1 to Power Leak
+	Send, {u}		; Power Leak
 return
 
 
@@ -44,6 +45,7 @@ return
 
 
 F16::				; Press Mouse Button 4 to Side Stun
+	Send, {y}		; Equip 1h Weapon
 	Send, {F3}		; Level 15 Haymaker, Side Stun 5 Secs
 	Send, {F2}		; Level 25 Eagle Strike, Anytime Follow Up 25% Snare 15 seconds
 	Send, {F1}		; Level 8 Owl Strike, Anytime Taunt
@@ -56,6 +58,7 @@ return
 
 
 F17::				; Press Mouse Buttzon 5 to Rear Snare
+	Send, {y}		; Equip 1h Weapon
 	Send, {F5}		; Level 29 Gut Shot, Rear Style Follow Up 75 hp power tap
 	Send, {F4}		; Level 18 Wind Taker, Rear Style 40% Snare 15 seconds
 	Send, {F2}		; Level 25 Eagle Strike, Anytime Follow Up 25% Snare 15 seconds
@@ -69,6 +72,7 @@ return
 
 
 F18::				; Press Mouse Button 6 to Evade Buff
+	Send, {y}		; Equip 1h Weapon
 	Send, {F7}		; Level 21 Rib Cracker, Front Style Follow Up 25 Matter Damage
 	Send, {F6}		; Level 10 Heart Stopper, Front Style 25 hp power tap
 	Send, {F2}		; Level 25 Eagle Strike, Anytime Follow Up 25% Snare 15 seconds
@@ -85,6 +89,7 @@ return
 
 
 F19::				; Press Mouse Button 7 to Essence Flames
+	Send, {y}		; Equip 1h Weapon
 	Send, {F9}		; Essence Sear, Essence Flames Follow Up (Essence Debuff)
 	Send, {F8}		; Essence Flames (Essence Dmg Proc Buff)
 	Send, {k}		; Burdening Grasp of Februstos (Endo Drain)
@@ -92,6 +97,7 @@ return
 
 
 F20::				; Press Mouse Button 8 to Buff Shear
+	Send, {y}		; Equip 1h Weapon
 	Send, {m}		; Essence Shatter, Essence Dampen Follow Up (Buff Shear)
 	Send, {n}		; Essence Dampen (PBAOE D/Q Debuff Style)
 	Send, {k}		; Burdening Grasp of Februstos (Endo Drain)
@@ -106,7 +112,7 @@ return
 
 
 F22::				; Press Mouse Button 10 to cast Conversion Buff on myself
-	Send, {y}		; Target self
+	Send, {Right}		; Target self
 		Sleep, 150
 	Send, {left}	; Tegashrig's Mediation (conversion buff)
 		Sleep, 150
@@ -164,6 +170,22 @@ return
 
 ^F20::				; Hold Control and Press Mouse Button 8 to Cast DoT
 	Send, ^{f8}		; Acidic Fog (CL DoT)
+return
+
+
+Seconds(x,y) {
+  Random, value, %x%, %y%
+  Return value
+}
+
+^!F9:: 		; sprint in place
+Loop
+  {
+    SendInput, {f down}	
+    Sleep, % Seconds(10,20)
+    SendInput, {f up}	; 
+    Sleep, % Seconds(10000,20000)
+ }
 return
 
 

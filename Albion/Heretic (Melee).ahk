@@ -62,6 +62,7 @@ F17::				; Press Mouse Button 5 for Rear Snare
 	Send, {o}		; PBAoE Str Debuff
 	Send, {f6}		; Boomslang (Rear Snare - 40% Snare for 19 sec)
 	Send, {f3}		; Constrictor (Anytime)
+	Send, {f6}		; Boomslang (Rear Snare - 40% Snare for 19 sec)
 return
 
 
